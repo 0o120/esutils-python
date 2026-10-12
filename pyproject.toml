@@ -1,33 +1,40 @@
 [build-system]
-requires = ["hatchling"]
+requires = ["hatchling>=1.32.4,<2"]
 build-backend = "hatchling.build"
 
 [project]
 name = "esutils"
-version = "1.0.1"
-authors = [
-	{ name="0x78", email="contact@0x78.com" }
-]
-requires-python = ">=3.6"
-description = "utility box for ECMAScript language tools. Partial translation of esutils"
+dynamic = ["version"]
+authors = [{name = "0x78", email = "contact@0x78.com"}]
+requires-python = ">=3.11"
+description = "Pinned Unicode character utilities for ECMAScript language tools"
 readme = "README.md"
-keywords = [
-	"esutils",
-    "escodegen",
-    "ecmascript",
-    "javascript",
-	"estools"
-]
+license = "BSD-2-Clause AND Unicode-3.0"
+license-files = ["LICENSE", "data/unicode/LICENSE.txt"]
+keywords = ["esutils", "ecmascript", "javascript", "unicode", "estools"]
 classifiers = [
-    "Development Status :: 5 - Production/Stable",
+    "Development Status :: 4 - Beta",
     "Intended Audience :: Developers",
-    "License :: OSI Approved :: BSD License",
     "Topic :: Software Development :: Compilers",
-    "Topic :: Software Development :: Libraries :: Python Modules",
-    "Topic :: Text Processing :: General",
-    "Programming Language :: Python :: 3.6"
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Programming Language :: Python :: 3.15",
 ]
 
 [project.urls]
-"Homepage" = "https://github.com/0o120/esutils-python"
+Homepage = "https://github.com/0o120/esutils-python"
+Issues = "https://github.com/0o120/esutils-python/issues"
 
+[tool.hatch.version]
+path = "esutils/_version.py"
+
+[tool.hatch.build.targets.wheel]
+packages = ["esutils"]
+
+[tool.hatch.build.targets.sdist]
+include = ["/esutils", "/data", "/tests", "/tools", "/.github", "/LICENSE", "/README.md",
+    "/pyproject.toml", "/requirements-dev.in", "/requirements-dev.lock",
+    "/CHANGELOG.md", "/CONTRIBUTING.md", "/IMPLEMENTATION_STATUS.md"]
