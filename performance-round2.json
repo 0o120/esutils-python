@@ -1,0 +1,1682 @@
+{
+  "python": "3.12.0 (tags/v3.12.0:0fb18b0, Oct  2 2023, 13:03:39) [MSC v.1935 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.19045-SP0",
+  "method": {
+    "timing": "Seven uninstrumented warm batches per isolated worker; parsing/conversion/import/GC collection outside timed samples. Original and modern starting sources are exact clean Git snapshots. No JavaScript execution.",
+    "parity": "Old walk results with differing callback counts are marked incomparable; modern-start/current counts must match. Old astral classifications are wrong and are explicitly recorded.",
+    "representations": "native=identical SimpleNamespace tree; parserNative=AST directly parsed by frozen modern parser; mapping=plain dictionaries; customMapping=UserDict for every node; customVisitor=Base subclass overriding table lookup."
+  },
+  "snapshots": {
+    "original": {
+      "revision": "ce16f4e76b257eed9670f7ca47cd79b794fce278",
+      "files": {
+        "esutils/__init__.py": "d035848f30d93e4c2ff368e05eb275fa607e5a6579197a191c634a8b56d44d35",
+        "esutils/code.py": "118230e338e70cb7b6dff0ff4eebb08879d26c19fe80dc441366beff5a054a75"
+      }
+    },
+    "modernStart": {
+      "revision": "6e32e201fad0b769b8e1f1bc6ca926708433f1db",
+      "files": {
+        "esutils/__init__.py": "e23e3d0e323aee7c263e2fac02a72c7a117264816cf661576e666d23083f0560",
+        "esutils/_unicode_data.py": "04a57cb87f48928e44079ac384cb18766c77b1111647cbbf1fb9afb5225fadce",
+        "esutils/_version.py": "ffb3a541d6d590ae2369dd022dda48d20ad3fb31006feaa01661f9985cc35e20",
+        "esutils/code.py": "db485cc99b71a99c8d01e0a61d362b8161bbd303ef8daff699e480a8b84f0cf4"
+      }
+    }
+  },
+  "measuredCurrent": {
+    "revision": "1e853525f96aa4f2632df439f3dace2bc85f3ace",
+    "workingTreeStatus": "",
+    "sourceSha256": {
+      "esutils\\__init__.py": "e23e3d0e323aee7c263e2fac02a72c7a117264816cf661576e666d23083f0560",
+      "esutils\\_unicode_data.py": "04a57cb87f48928e44079ac384cb18766c77b1111647cbbf1fb9afb5225fadce",
+      "esutils\\_version.py": "ffb3a541d6d590ae2369dd022dda48d20ad3fb31006feaa01661f9985cc35e20",
+      "esutils\\code.py": "1c1a492b20fda96d54a6b04c37e434ae1caef8295d418fa90e1ba255e76e5340"
+    }
+  },
+  "finalRuntimeRevision": "1e853525f96aa4f2632df439f3dace2bc85f3ace",
+  "results": [
+    {
+      "policy": "legacy",
+      "workload": "ascii",
+      "results": {
+        "original": {
+          "medianSeconds": 0.07290969998575747,
+          "samplesSeconds": [
+            0.07217880000825971,
+            0.07196470000781119,
+            0.07290969998575747,
+            0.07351060002110898,
+            0.0731861999956891,
+            0.07366130000445992,
+            0.07253319991286844
+          ],
+          "operations": 800000,
+          "trustedOrdPath": false,
+          "classifications": [
+            [
+              true,
+              true
+            ],
+            [
+              true,
+              true
+            ],
+            [
+              true,
+              true
+            ],
+            [
+              true,
+              true
+            ],
+            [
+              true,
+              true
+            ],
+            [
+              true,
+              true
+            ],
+            [
+              false,
+              true
+            ],
+            [
+              false,
+              true
+            ]
+          ]
+        },
+        "modernStart": {
+          "medianSeconds": 0.10808190004900098,
+          "samplesSeconds": [
+            0.10703379998449236,
+            0.10905470000579953,
+            0.10808190004900098,
+            0.10666849999688566,
+            0.10867890005465597,
+            0.10749740002211183,
+            0.10929629998281598
+          ],
+          "operations": 800000,
+          "trustedOrdPath": false,
+          "classifications": [
+            [
+              true,
+              true
+            ],
+            [
+              true,
+              true
+            ],
+            [
+              true,
+              true
+            ],
+            [
+              true,
+              true
+            ],
+            [
+              true,
+              true
+            ],
+            [
+              true,
+              true
+            ],
+            [
+              false,
+              true
+            ],
+            [
+              false,
+              true
+            ]
+          ]
+        },
+        "current": {
+          "medianSeconds": 0.09418690006714314,
+          "samplesSeconds": [
+            0.09526570001617074,
+            0.09353259997442365,
+            0.09487750008702278,
+            0.09418690006714314,
+            0.09286550001706928,
+            0.09435769997071475,
+            0.09271050000097603
+          ],
+          "operations": 800000,
+          "trustedOrdPath": false,
+          "classifications": [
+            [
+              true,
+              true
+            ],
+            [
+              true,
+              true
+            ],
+            [
+              true,
+              true
+            ],
+            [
+              true,
+              true
+            ],
+            [
+              true,
+              true
+            ],
+            [
+              true,
+              true
+            ],
+            [
+              false,
+              true
+            ],
+            [
+              false,
+              true
+            ]
+          ]
+        }
+      },
+      "currentToModernStart": 0.8714400840884711,
+      "originalClassificationParity": true,
+      "currentToOriginal": 1.2918294833957904
+    },
+    {
+      "policy": "legacy",
+      "workload": "bmp",
+      "results": {
+        "original": {
+          "medianSeconds": 0.18386499991174787,
+          "samplesSeconds": [
+            0.18742699990980327,
+            0.18258629995398223,
+            0.18167770002037287,
+            0.18587559997104108,
+            0.1957391999894753,
+            0.18386499991174787,
+            0.18279220000840724
+          ],
+          "operations": 400000,
+          "trustedOrdPath": false,
+          "classifications": [
+            [
+              true,
+              true
+            ],
+            [
+              false,
+              true
+            ],
+            [
+              false,
+              false
+            ],
+            [
+              false,
+              true
+            ]
+          ]
+        },
+        "modernStart": {
+          "medianSeconds": 0.17732390004675835,
+          "samplesSeconds": [
+            0.17670170008204877,
+            0.17600990005303174,
+            0.17797849990893155,
+            0.17732390004675835,
+            0.18043259996920824,
+            0.17904399998951703,
+            0.17573650006670505
+          ],
+          "operations": 400000,
+          "trustedOrdPath": false,
+          "classifications": [
+            [
+              true,
+              true
+            ],
+            [
+              false,
+              true
+            ],
+            [
+              false,
+              false
+            ],
+            [
+              false,
+              true
+            ]
+          ]
+        },
+        "current": {
+          "medianSeconds": 0.17753260000608861,
+          "samplesSeconds": [
+            0.1791677000001073,
+            0.17753260000608861,
+            0.17717409995384514,
+            0.17585950007196516,
+            0.17562009999528527,
+            0.17816729994956404,
+            0.1823292999761179
+          ],
+          "operations": 400000,
+          "trustedOrdPath": false,
+          "classifications": [
+            [
+              true,
+              true
+            ],
+            [
+              false,
+              true
+            ],
+            [
+              false,
+              false
+            ],
+            [
+              false,
+              true
+            ]
+          ]
+        }
+      },
+      "currentToModernStart": 1.0011769420776062,
+      "originalClassificationParity": true,
+      "currentToOriginal": 0.9655595142702597
+    },
+    {
+      "policy": "legacy",
+      "workload": "astral",
+      "results": {
+        "original": {
+          "medianSeconds": 0.14479549997486174,
+          "samplesSeconds": [
+            0.14649910002481192,
+            0.1446390999481082,
+            0.1423489999724552,
+            0.14522659999784082,
+            0.14479549997486174,
+            0.14582139998674393,
+            0.14328429999295622
+          ],
+          "operations": 300000,
+          "trustedOrdPath": false,
+          "classifications": [
+            [
+              false,
+              false
+            ],
+            [
+              false,
+              false
+            ],
+            [
+              false,
+              false
+            ]
+          ]
+        },
+        "modernStart": {
+          "medianSeconds": 0.13792150001972914,
+          "samplesSeconds": [
+            0.13823909999337047,
+            0.1366757000796497,
+            0.135717700002715,
+            0.13748839998152107,
+            0.13928959995973855,
+            0.13909950002562255,
+            0.13792150001972914
+          ],
+          "operations": 300000,
+          "trustedOrdPath": false,
+          "classifications": [
+            [
+              true,
+              true
+            ],
+            [
+              true,
+              true
+            ],
+            [
+              false,
+              false
+            ]
+          ]
+        },
+        "current": {
+          "medianSeconds": 0.1343596000224352,
+          "samplesSeconds": [
+            0.13312880008015782,
+            0.13313029997516423,
+            0.13418619998265058,
+            0.1347324000671506,
+            0.1343596000224352,
+            0.1360919000580907,
+            0.13470129994675517
+          ],
+          "operations": 300000,
+          "trustedOrdPath": false,
+          "classifications": [
+            [
+              true,
+              true
+            ],
+            [
+              true,
+              true
+            ],
+            [
+              false,
+              false
+            ]
+          ]
+        }
+      },
+      "currentToModernStart": 0.9741744398314662,
+      "originalClassificationParity": false,
+      "currentToOriginal": 0.9279266278700764
+    },
+    {
+      "policy": "modern",
+      "workload": "ascii",
+      "results": {
+        "modernStart": {
+          "medianSeconds": 0.10946629999671131,
+          "samplesSeconds": [
+            0.1104214999359101,
+            0.10861280001699924,
+            0.10920319997239858,
+            0.10946629999671131,
+            0.11105700000189245,
+            0.10815669992007315,
+            0.11023510002996773
+          ],
+          "operations": 800000,
+          "trustedOrdPath": false,
+          "classifications": [
+            [
+              true,
+              true
+            ],
+            [
+              true,
+              true
+            ],
+            [
+              true,
+              true
+            ],
+            [
+              true,
+              true
+            ],
+            [
+              true,
+              true
+            ],
+            [
+              true,
+              true
+            ],
+            [
+              false,
+              true
+            ],
+            [
+              false,
+              true
+            ]
+          ]
+        },
+        "current": {
+          "medianSeconds": 0.09766659990418702,
+          "samplesSeconds": [
+            0.09783640003297478,
+            0.09713370003737509,
+            0.09616979991551489,
+            0.09766659990418702,
+            0.09817820007447153,
+            0.09744419995695353,
+            0.09944450005423278
+          ],
+          "operations": 800000,
+          "trustedOrdPath": false,
+          "classifications": [
+            [
+              true,
+              true
+            ],
+            [
+              true,
+              true
+            ],
+            [
+              true,
+              true
+            ],
+            [
+              true,
+              true
+            ],
+            [
+              true,
+              true
+            ],
+            [
+              true,
+              true
+            ],
+            [
+              false,
+              true
+            ],
+            [
+              false,
+              true
+            ]
+          ]
+        }
+      },
+      "currentToModernStart": 0.8922070071530801
+    },
+    {
+      "policy": "modern",
+      "workload": "bmp",
+      "results": {
+        "modernStart": {
+          "medianSeconds": 0.1726622999412939,
+          "samplesSeconds": [
+            0.1752989999949932,
+            0.1726622999412939,
+            0.17151269991882145,
+            0.1709824000718072,
+            0.1753540999488905,
+            0.17106510000303388,
+            0.1734089000383392
+          ],
+          "operations": 400000,
+          "trustedOrdPath": false,
+          "classifications": [
+            [
+              true,
+              true
+            ],
+            [
+              false,
+              true
+            ],
+            [
+              true,
+              true
+            ],
+            [
+              false,
+              true
+            ]
+          ]
+        },
+        "current": {
+          "medianSeconds": 0.17471890000160784,
+          "samplesSeconds": [
+            0.17027330002747476,
+            0.17173929989803582,
+            0.17525960004422814,
+            0.17515149991959333,
+            0.17392520001158118,
+            0.17471890000160784,
+            0.17513830005191267
+          ],
+          "operations": 400000,
+          "trustedOrdPath": false,
+          "classifications": [
+            [
+              true,
+              true
+            ],
+            [
+              false,
+              true
+            ],
+            [
+              true,
+              true
+            ],
+            [
+              false,
+              true
+            ]
+          ]
+        }
+      },
+      "currentToModernStart": 1.0119111123911426
+    },
+    {
+      "policy": "modern",
+      "workload": "astral",
+      "results": {
+        "modernStart": {
+          "medianSeconds": 0.13990890001878142,
+          "samplesSeconds": [
+            0.1435076999478042,
+            0.13804840005468577,
+            0.13990890001878142,
+            0.14650040003471076,
+            0.14120439998805523,
+            0.13980250002350658,
+            0.13817120005842298
+          ],
+          "operations": 300000,
+          "trustedOrdPath": false,
+          "classifications": [
+            [
+              true,
+              true
+            ],
+            [
+              true,
+              true
+            ],
+            [
+              false,
+              false
+            ]
+          ]
+        },
+        "current": {
+          "medianSeconds": 0.13299389998428524,
+          "samplesSeconds": [
+            0.13483719993382692,
+            0.1318209000164643,
+            0.13413020002190024,
+            0.1326444000005722,
+            0.13246400002390146,
+            0.139037000015378,
+            0.13299389998428524
+          ],
+          "operations": 300000,
+          "trustedOrdPath": false,
+          "classifications": [
+            [
+              true,
+              true
+            ],
+            [
+              true,
+              true
+            ],
+            [
+              false,
+              false
+            ]
+          ]
+        }
+      },
+      "currentToModernStart": 0.9505749810514705
+    },
+    {
+      "policy": "trusted",
+      "workload": "ascii",
+      "results": {
+        "original": {
+          "medianSeconds": 0.07288809993769974,
+          "samplesSeconds": [
+            0.07288809993769974,
+            0.07326330000068992,
+            0.07336200005374849,
+            0.07281469996087253,
+            0.07146049989387393,
+            0.07244399993214756,
+            0.07364620000589639
+          ],
+          "operations": 800000,
+          "trustedOrdPath": false,
+          "classifications": [
+            [
+              true,
+              true
+            ],
+            [
+              true,
+              true
+            ],
+            [
+              true,
+              true
+            ],
+            [
+              true,
+              true
+            ],
+            [
+              true,
+              true
+            ],
+            [
+              true,
+              true
+            ],
+            [
+              false,
+              true
+            ],
+            [
+              false,
+              true
+            ]
+          ]
+        },
+        "modernStart": {
+          "medianSeconds": 0.10727300005964935,
+          "samplesSeconds": [
+            0.10669750010129064,
+            0.1059256000444293,
+            0.10894910001661628,
+            0.10727300005964935,
+            0.10741970001254231,
+            0.10823410004377365,
+            0.10702829994261265
+          ],
+          "operations": 800000,
+          "trustedOrdPath": false,
+          "classifications": [
+            [
+              true,
+              true
+            ],
+            [
+              true,
+              true
+            ],
+            [
+              true,
+              true
+            ],
+            [
+              true,
+              true
+            ],
+            [
+              true,
+              true
+            ],
+            [
+              true,
+              true
+            ],
+            [
+              false,
+              true
+            ],
+            [
+              false,
+              true
+            ]
+          ]
+        },
+        "current": {
+          "medianSeconds": 0.07526820001658052,
+          "samplesSeconds": [
+            0.07460619998164475,
+            0.07365299994125962,
+            0.07526820001658052,
+            0.07341539999470115,
+            0.07592630002181977,
+            0.07539250003173947,
+            0.07580109999980778
+          ],
+          "operations": 800000,
+          "trustedOrdPath": true,
+          "classifications": [
+            [
+              true,
+              true
+            ],
+            [
+              true,
+              true
+            ],
+            [
+              true,
+              true
+            ],
+            [
+              true,
+              true
+            ],
+            [
+              true,
+              true
+            ],
+            [
+              true,
+              true
+            ],
+            [
+              false,
+              true
+            ],
+            [
+              false,
+              true
+            ]
+          ]
+        }
+      },
+      "currentToModernStart": 0.7016509277705247,
+      "originalClassificationParity": true,
+      "currentToOriginal": 1.0326541655073345
+    },
+    {
+      "policy": "trusted",
+      "workload": "bmp",
+      "results": {
+        "original": {
+          "medianSeconds": 0.1850966999772936,
+          "samplesSeconds": [
+            0.1858788999961689,
+            0.18449280003551394,
+            0.18474069994408637,
+            0.1850966999772936,
+            0.18414680007845163,
+            0.18579060002230108,
+            0.1903216999489814
+          ],
+          "operations": 400000,
+          "trustedOrdPath": false,
+          "classifications": [
+            [
+              true,
+              true
+            ],
+            [
+              false,
+              true
+            ],
+            [
+              false,
+              false
+            ],
+            [
+              false,
+              true
+            ]
+          ]
+        },
+        "modernStart": {
+          "medianSeconds": 0.17760559997987002,
+          "samplesSeconds": [
+            0.1794911999022588,
+            0.17760559997987002,
+            0.17667499999515712,
+            0.17761319992132485,
+            0.17841870000120252,
+            0.17658950004260987,
+            0.17553400003816932
+          ],
+          "operations": 400000,
+          "trustedOrdPath": false,
+          "classifications": [
+            [
+              true,
+              true
+            ],
+            [
+              false,
+              true
+            ],
+            [
+              true,
+              true
+            ],
+            [
+              false,
+              true
+            ]
+          ]
+        },
+        "current": {
+          "medianSeconds": 0.10177790001034737,
+          "samplesSeconds": [
+            0.10342299996409565,
+            0.10300100001040846,
+            0.10055650002323091,
+            0.10154369997326285,
+            0.10123550007119775,
+            0.10284880001563579,
+            0.10177790001034737
+          ],
+          "operations": 400000,
+          "trustedOrdPath": true,
+          "classifications": [
+            [
+              true,
+              true
+            ],
+            [
+              false,
+              true
+            ],
+            [
+              true,
+              true
+            ],
+            [
+              false,
+              true
+            ]
+          ]
+        }
+      },
+      "currentToModernStart": 0.5730556920608526,
+      "originalClassificationParity": false,
+      "currentToOriginal": 0.5498633958511026
+    },
+    {
+      "policy": "trusted",
+      "workload": "astral",
+      "results": {
+        "original": {
+          "medianSeconds": 0.14455600001383573,
+          "samplesSeconds": [
+            0.14454529993236065,
+            0.14455600001383573,
+            0.14325249998364598,
+            0.14354170009028167,
+            0.1448007000144571,
+            0.14719499996863306,
+            0.1460723999189213
+          ],
+          "operations": 300000,
+          "trustedOrdPath": false,
+          "classifications": [
+            [
+              false,
+              false
+            ],
+            [
+              false,
+              false
+            ],
+            [
+              false,
+              false
+            ]
+          ]
+        },
+        "modernStart": {
+          "medianSeconds": 0.13997439993545413,
+          "samplesSeconds": [
+            0.1445819999789819,
+            0.13848780002444983,
+            0.14200830005574971,
+            0.13835239992477,
+            0.13997439993545413,
+            0.14019990002270788,
+            0.1382950000697747
+          ],
+          "operations": 300000,
+          "trustedOrdPath": false,
+          "classifications": [
+            [
+              true,
+              true
+            ],
+            [
+              true,
+              true
+            ],
+            [
+              false,
+              false
+            ]
+          ]
+        },
+        "current": {
+          "medianSeconds": 0.08098800003062934,
+          "samplesSeconds": [
+            0.08126390003599226,
+            0.08151149994228035,
+            0.08183879998978227,
+            0.08098800003062934,
+            0.07998030004091561,
+            0.07979850005358458,
+            0.08014780003577471
+          ],
+          "operations": 300000,
+          "trustedOrdPath": true,
+          "classifications": [
+            [
+              true,
+              true
+            ],
+            [
+              true,
+              true
+            ],
+            [
+              false,
+              false
+            ]
+          ]
+        }
+      },
+      "currentToModernStart": 0.5785915143624479,
+      "originalClassificationParity": false,
+      "currentToOriginal": 0.5602534659431488
+    },
+    {
+      "policy": "publicBoundary",
+      "workload": "ascii",
+      "results": {
+        "original": {
+          "medianSeconds": 0.10634050006046891,
+          "samplesSeconds": [
+            0.10634050006046891,
+            0.1063039000146091,
+            0.10695429996121675,
+            0.1061201998963952,
+            0.10634209995623678,
+            0.10898729995824397,
+            0.10453739995136857
+          ],
+          "operations": 800000,
+          "trustedOrdPath": false,
+          "classifications": [
+            [
+              true,
+              false
+            ],
+            [
+              true,
+              false
+            ],
+            [
+              false,
+              true
+            ],
+            [
+              false,
+              true
+            ],
+            [
+              false,
+              false
+            ],
+            [
+              false,
+              false
+            ],
+            [
+              false,
+              false
+            ],
+            [
+              false,
+              false
+            ]
+          ]
+        },
+        "modernStart": {
+          "medianSeconds": 0.24616610002703965,
+          "samplesSeconds": [
+            0.24130699993111193,
+            0.24971280002500862,
+            0.24877509998623282,
+            0.2542337999911979,
+            0.24439679994247854,
+            0.24551770009566098,
+            0.24616610002703965
+          ],
+          "operations": 800000,
+          "trustedOrdPath": false,
+          "classifications": [
+            [
+              true,
+              false
+            ],
+            [
+              true,
+              false
+            ],
+            [
+              false,
+              true
+            ],
+            [
+              false,
+              true
+            ],
+            [
+              false,
+              false
+            ],
+            [
+              false,
+              false
+            ],
+            [
+              false,
+              false
+            ],
+            [
+              false,
+              false
+            ]
+          ]
+        },
+        "current": {
+          "medianSeconds": 0.24165780004113913,
+          "samplesSeconds": [
+            0.24076610000338405,
+            0.2417785000288859,
+            0.24945760006085038,
+            0.24027439998462796,
+            0.23974630003795028,
+            0.24165780004113913,
+            0.2493385000852868
+          ],
+          "operations": 800000,
+          "trustedOrdPath": false,
+          "classifications": [
+            [
+              true,
+              false
+            ],
+            [
+              true,
+              false
+            ],
+            [
+              false,
+              true
+            ],
+            [
+              false,
+              true
+            ],
+            [
+              false,
+              false
+            ],
+            [
+              false,
+              false
+            ],
+            [
+              false,
+              false
+            ],
+            [
+              false,
+              false
+            ]
+          ]
+        }
+      },
+      "currentToModernStart": 0.9816859430059406,
+      "originalClassificationParity": true,
+      "currentToOriginal": 2.2724907246413557
+    },
+    {
+      "policy": "publicBoundary",
+      "workload": "bmp",
+      "results": {
+        "original": {
+          "medianSeconds": 0.08275289996527135,
+          "samplesSeconds": [
+            0.08160289993975312,
+            0.08437129994854331,
+            0.08409710007254034,
+            0.08089560002554208,
+            0.08285409992095083,
+            0.08275289996527135,
+            0.08036080002784729
+          ],
+          "operations": 400000,
+          "trustedOrdPath": false,
+          "classifications": [
+            [
+              true,
+              false
+            ],
+            [
+              false,
+              true
+            ],
+            [
+              false,
+              true
+            ],
+            [
+              true,
+              false
+            ]
+          ]
+        },
+        "modernStart": {
+          "medianSeconds": 0.12559939990751445,
+          "samplesSeconds": [
+            0.1260990999871865,
+            0.12390620005317032,
+            0.12310329999309033,
+            0.12559939990751445,
+            0.12457939994055778,
+            0.12739859998691827,
+            0.12577699997927994
+          ],
+          "operations": 400000,
+          "trustedOrdPath": false,
+          "classifications": [
+            [
+              true,
+              false
+            ],
+            [
+              false,
+              true
+            ],
+            [
+              false,
+              true
+            ],
+            [
+              true,
+              false
+            ]
+          ]
+        },
+        "current": {
+          "medianSeconds": 0.12720989994704723,
+          "samplesSeconds": [
+            0.1281093000434339,
+            0.12811610009521246,
+            0.1270340000046417,
+            0.12517419992946088,
+            0.12720989994704723,
+            0.13172750000376254,
+            0.12576910003554076
+          ],
+          "operations": 400000,
+          "trustedOrdPath": false,
+          "classifications": [
+            [
+              true,
+              false
+            ],
+            [
+              false,
+              true
+            ],
+            [
+              false,
+              true
+            ],
+            [
+              true,
+              false
+            ]
+          ]
+        }
+      },
+      "currentToModernStart": 1.0128225138075395,
+      "originalClassificationParity": true,
+      "currentToOriginal": 1.5372258857445842
+    },
+    {
+      "policy": "publicBoundary",
+      "workload": "astral",
+      "results": {
+        "original": {
+          "medianSeconds": 0.06894739996641874,
+          "samplesSeconds": [
+            0.06906380003783852,
+            0.07074690004810691,
+            0.06966479995753616,
+            0.06724700005725026,
+            0.06894739996641874,
+            0.06660620006732643,
+            0.06696379999630153
+          ],
+          "operations": 300000,
+          "trustedOrdPath": false,
+          "classifications": [
+            [
+              false,
+              false
+            ],
+            [
+              false,
+              false
+            ],
+            [
+              false,
+              false
+            ]
+          ]
+        },
+        "modernStart": {
+          "medianSeconds": 0.0951438999036327,
+          "samplesSeconds": [
+            0.09316819999366999,
+            0.09880359994713217,
+            0.09496659995056689,
+            0.09824169997591525,
+            0.0951438999036327,
+            0.09160410007461905,
+            0.09620459994766861
+          ],
+          "operations": 300000,
+          "trustedOrdPath": false,
+          "classifications": [
+            [
+              false,
+              false
+            ],
+            [
+              false,
+              false
+            ],
+            [
+              false,
+              false
+            ]
+          ]
+        },
+        "current": {
+          "medianSeconds": 0.09461260004900396,
+          "samplesSeconds": [
+            0.09461260004900396,
+            0.09519379993434995,
+            0.09235259995330125,
+            0.09386139991693199,
+            0.09361450001597404,
+            0.10052420001011342,
+            0.09842529997695237
+          ],
+          "operations": 300000,
+          "trustedOrdPath": false,
+          "classifications": [
+            [
+              false,
+              false
+            ],
+            [
+              false,
+              false
+            ],
+            [
+              false,
+              false
+            ]
+          ]
+        }
+      },
+      "currentToModernStart": 0.9944158284959217,
+      "originalClassificationParity": true,
+      "currentToOriginal": 1.3722431896646663
+    },
+    {
+      "policy": "trustedBoundary",
+      "workload": "ascii",
+      "results": {
+        "original": {
+          "medianSeconds": 0.11507349996827543,
+          "samplesSeconds": [
+            0.11377569998148829,
+            0.1127467000624165,
+            0.11356490000616759,
+            0.11537789995782077,
+            0.11687419994268566,
+            0.11507349996827543,
+            0.11545759998261929
+          ],
+          "operations": 800000,
+          "trustedOrdPath": false,
+          "classifications": [
+            [
+              true,
+              false
+            ],
+            [
+              true,
+              false
+            ],
+            [
+              false,
+              true
+            ],
+            [
+              false,
+              true
+            ],
+            [
+              false,
+              false
+            ],
+            [
+              false,
+              false
+            ],
+            [
+              false,
+              false
+            ],
+            [
+              false,
+              false
+            ]
+          ]
+        },
+        "modernStart": {
+          "medianSeconds": 0.24680439999792725,
+          "samplesSeconds": [
+            0.24672699999064207,
+            0.24422680004499853,
+            0.25000560004264116,
+            0.24474230001214892,
+            0.24680439999792725,
+            0.2537983999354765,
+            0.24885449989233166
+          ],
+          "operations": 800000,
+          "trustedOrdPath": false,
+          "classifications": [
+            [
+              true,
+              false
+            ],
+            [
+              true,
+              false
+            ],
+            [
+              false,
+              true
+            ],
+            [
+              false,
+              true
+            ],
+            [
+              false,
+              false
+            ],
+            [
+              false,
+              false
+            ],
+            [
+              false,
+              false
+            ],
+            [
+              false,
+              false
+            ]
+          ]
+        },
+        "current": {
+          "medianSeconds": 0.06518299994058907,
+          "samplesSeconds": [
+            0.06822699995245785,
+            0.06425479997415096,
+            0.0640808999305591,
+            0.06472840008791536,
+            0.06526209996081889,
+            0.06518299994058907,
+            0.06615770002827048
+          ],
+          "operations": 800000,
+          "trustedOrdPath": true,
+          "classifications": [
+            [
+              true,
+              false
+            ],
+            [
+              true,
+              false
+            ],
+            [
+              false,
+              true
+            ],
+            [
+              false,
+              true
+            ],
+            [
+              false,
+              false
+            ],
+            [
+              false,
+              false
+            ],
+            [
+              false,
+              false
+            ],
+            [
+              false,
+              false
+            ]
+          ]
+        }
+      },
+      "currentToModernStart": 0.26410793300742,
+      "originalClassificationParity": true,
+      "currentToOriginal": 0.5664466619904613
+    },
+    {
+      "policy": "trustedBoundary",
+      "workload": "bmp",
+      "results": {
+        "original": {
+          "medianSeconds": 0.08295230008661747,
+          "samplesSeconds": [
+            0.0830650000134483,
+            0.0866099001141265,
+            0.0843618999933824,
+            0.08184709993656725,
+            0.08167800004594028,
+            0.07969969999976456,
+            0.08295230008661747
+          ],
+          "operations": 400000,
+          "trustedOrdPath": false,
+          "classifications": [
+            [
+              true,
+              false
+            ],
+            [
+              false,
+              true
+            ],
+            [
+              false,
+              true
+            ],
+            [
+              true,
+              false
+            ]
+          ]
+        },
+        "modernStart": {
+          "medianSeconds": 0.1270711999386549,
+          "samplesSeconds": [
+            0.12719400005880743,
+            0.12954179989174008,
+            0.12370400002691895,
+            0.1237468000035733,
+            0.12696840008720756,
+            0.1270711999386549,
+            0.13612229994032532
+          ],
+          "operations": 400000,
+          "trustedOrdPath": false,
+          "classifications": [
+            [
+              true,
+              false
+            ],
+            [
+              false,
+              true
+            ],
+            [
+              false,
+              true
+            ],
+            [
+              true,
+              false
+            ]
+          ]
+        },
+        "current": {
+          "medianSeconds": 0.03559540002606809,
+          "samplesSeconds": [
+            0.042469499981962144,
+            0.03555359994061291,
+            0.034926600055769086,
+            0.03559540002606809,
+            0.03645540005527437,
+            0.03603710001334548,
+            0.0353956000180915
+          ],
+          "operations": 400000,
+          "trustedOrdPath": true,
+          "classifications": [
+            [
+              true,
+              false
+            ],
+            [
+              false,
+              true
+            ],
+            [
+              false,
+              true
+            ],
+            [
+              true,
+              false
+            ]
+          ]
+        }
+      },
+      "currentToModernStart": 0.28012169589373664,
+      "originalClassificationParity": true,
+      "currentToOriginal": 0.42910684801867993
+    },
+    {
+      "policy": "trustedBoundary",
+      "workload": "astral",
+      "results": {
+        "original": {
+          "medianSeconds": 0.06766170007176697,
+          "samplesSeconds": [
+            0.06805889995303005,
+            0.06936350010801107,
+            0.06766170007176697,
+            0.06735070003196597,
+            0.07330869999714196,
+            0.06732429994735867,
+            0.06641820003278553
+          ],
+          "operations": 300000,
+          "trustedOrdPath": false,
+          "classifications": [
+            [
+              false,
+              false
+            ],
+            [
+              false,
+              false
+            ],
+            [
+              false,
+              false
+            ]
+          ]
+        },
+        "modernStart": {
+          "medianSeconds": 0.09615939995273948,
+          "samplesSeconds": [
+            0.09506630001123995,
+            0.09519500005990267,
+            0.09615939995273948,
+            0.09673949994612485,
+            0.09609930007718503,
+            0.09858280001208186,
+            0.09728290000930429
+          ],
+          "operations": 300000,
+          "trustedOrdPath": false,
+          "classifications": [
+            [
+              false,
+              false
+            ],
+            [
+              false,
+              false
+            ],
+            [
+              false,
+              false
+            ]
+          ]
+        },
+        "current": {
+          "medianSeconds": 0.025476000038906932,
+          "samplesSeconds": [
+            0.025476000038906932,
+            0.02479029993992299,
+            0.025512299966067076,
+            0.025799899944104254,
+            0.02527019998524338,
+            0.025356799946166575,
+            0.02586310007609427
+          ],
+          "operations": 300000,
+          "trustedOrdPath": true,
+          "classifications": [
+            [
+              false,
+              false
+            ],
+            [
+              false,
+              false
+            ],
+            [
+              false,
+              false
+            ]
+          ]
+        }
+      },
+      "currentToModernStart": 0.2649350978835964,
+      "originalClassificationParity": true,
+      "currentToOriginal": 0.3765202472282726
+    }
+  ],
+  "note": "Trusted paths accept only exact integers derived from ord(one_character); five-helper parity is tested exhaustively across all chr/ord values. Public scalar/type validation is unchanged."
+}

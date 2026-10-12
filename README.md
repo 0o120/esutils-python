@@ -53,3 +53,7 @@ Python interpreter's Unicode database. Unicode updates require deliberate releas
 
 See [contributor instructions](CONTRIBUTING.md), [migration notes](CHANGELOG.md)
 and [implementation evidence](IMPLEMENTATION_STATUS.md).
+
+[Performance measurements](PERFORMANCE.md) document the public validation cost
+and the private ord paths used by the coordinated toolchain. Public API
+validation and Unicode policies remain unchanged.
