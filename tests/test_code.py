@@ -53,6 +53,15 @@ class CodeTests(unittest.TestCase):
             if code._identifier_part_from_ord(value) != code.isIdentifierPart(cp):
                 self.fail(f"Private part policy differs at U+{cp:04X}")
 
+    def test_private_ord_boundary_paths_match_public_policy_exhaustively(self):
+        pairs = ((code._white_space_from_ord, code.isWhiteSpace),
+            (code._line_terminator_from_ord, code.isLineTerminator),
+            (code._decimal_digit_from_ord, code.isDecimalDigit))
+        for cp in range(0x110000):
+            for private, public in pairs:
+                if private(ord(chr(cp))) != public(cp):
+                    self.fail(f"Private {private.__name__} differs at U+{cp:04X}")
+
     def test_from_code_point_returns_scalar(self):
         self.assertEqual(code.fromCodePoint(0x10400), chr(0x10400))
         for cp in (-1, 0x110000, 0xD800):

@@ -58,6 +58,21 @@ _WHITE_SPACE = frozenset((0x9, 0xB, 0xC, 0x20, 0xA0, 0x1680,
 _LINE_TERMINATORS = frozenset((0xA, 0xD, 0x2028, 0x2029))
 
 
+def _white_space_from_ord(ch: int) -> bool:
+    """Private ord-domain path for trusted character joins; surrogates false."""
+    return ch in _WHITE_SPACE
+
+
+def _line_terminator_from_ord(ch: int) -> bool:
+    """Private ord-domain path, without duplicate public scalar validation."""
+    return ch in _LINE_TERMINATORS
+
+
+def _decimal_digit_from_ord(ch: int) -> bool:
+    """Private path for exact integers from ord(one_python_character)."""
+    return 0x30 <= ch <= 0x39
+
+
 def isWhiteSpace(ch: int) -> bool:
     return _valid(ch) and ch in _WHITE_SPACE
 
