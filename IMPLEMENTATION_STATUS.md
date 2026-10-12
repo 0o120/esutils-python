@@ -7,7 +7,7 @@ Evidence on Python 3.11 and 3.12:
 
 - New astral, invalid input and modern policy regression tests failed on baseline
   and pass after the repair.
-- Eight tests pass, including independent exhaustive classification over all
+- Eleven tests pass, including independent exhaustive classification over all
   1,114,112 code points for modern Unicode 17, legacy Unicode 9 ID properties,
   and the legacy BMP ES5 character categories (six predicates total).
 - Vendored source SHA-256 and exact generated-content checks pass offline.
@@ -15,17 +15,22 @@ Evidence on Python 3.11 and 3.12:
 - Source archive builds; wheel built from the archive passes metadata, retained
   Unicode license, clean extracted-wheel import and Python README examples.
 - CI is configured for Python 3.11–3.15 on Linux and Windows, plus macOS 3.11/3.15;
-  remote CI has not
-  been executed or published by this local implementation.
+  hosted workflows run on the modernization branch; see the
+  [live GitHub CI evidence](https://github.com/0o120/esutils-python/actions).
 
 Performance can be reproduced with `python tools/benchmark.py`. Runtime lookup
 uses the ASCII fast path and logarithmic scalar interval search, with no regex
 compilation or network. The generated tables occupy about 59 KiB of source.
-On Python 3.12, minimum fresh process import was 2.7 ms versus approximately
-24 ms compiling/executing the old regex module. One million validated ASCII
-lookups took 0.33 s (old unchecked indexing 0.11 s); BMP lookups took 0.50 s
-(old regex 0.40 s); astral lookups took 0.49 s. These local measurements show the
-cost of consistent scalar validation and are not cross-machine promises.
+Final paired CPython 3.12.0 source-only uninstrumented import was 14.9 ms
+versus 24.4 ms for the old module. Validated modern ASCII classification runs
+about 7.7 million operations/second on the measured workload, roughly 60% faster
+than the first modern implementation. The old unchecked ASCII path was about
+11.3 million/second; this investigated budget exception includes the new
+type/scalar contract. Current legacy BMP classification is roughly comparable
+to the old path. Old astral results are incorrect and cannot support a correctness
+equivalence claim. Raw samples, source hashes and separate allocation results
+are preserved in [performance.json](performance.json). These are local
+measurements rather than cross-machine promises.
 
 Limits: character predicates do not validate whole names, escapes or reserved
 words. The upstream ast/keyword modules remain intentionally outside this port.
