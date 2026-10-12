@@ -14,7 +14,8 @@ Evidence on Python 3.11 and 3.12:
 - ECMAScript whitespace/line terminator behavior and additions are checked.
 - Source archive builds; wheel built from the archive passes metadata, retained
   Unicode license, clean extracted-wheel import and Python README examples.
-- CI is configured for Python 3.11–3.15 on Linux and Windows; remote CI has not
+- CI is configured for Python 3.11–3.15 on Linux and Windows, plus macOS 3.11/3.15;
+  remote CI has not
   been executed or published by this local implementation.
 
 Performance can be reproduced with `python tools/benchmark.py`. Runtime lookup
