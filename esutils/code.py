@@ -78,7 +78,10 @@ _ASCII_PART = tuple(_ASCII_START[cp] or 0x30 <= cp <= 0x39 for cp in range(128))
 
 
 def _identifier(ch: int, table: tuple[int, ...], ascii_table: tuple[bool, ...]) -> bool:
-    if not _valid(ch):
+    if type(ch) is int:
+        if not 0 <= ch <= 0x10FFFF or 0xD800 <= ch <= 0xDFFF:
+            return False
+    elif not _valid(ch):
         return False
     if ch < 128:
         return ascii_table[ch]
@@ -87,29 +90,41 @@ def _identifier(ch: int, table: tuple[int, ...], ascii_table: tuple[bool, ...]) 
 
 def isIdentifierStart(ch: int) -> bool:
     """Unicode 17 ID_Start plus ECMAScript dollar and underscore additions."""
+    if type(ch) is int and 0 <= ch < 128:
+        return _ASCII_START[ch]
     return _identifier(ch, ID_START, _ASCII_START)
 
 
 def isIdentifierPart(ch: int) -> bool:
     """Unicode 17 ID_Continue plus ECMAScript dollar, ZWNJ and ZWJ additions."""
+    if type(ch) is int and 0 <= ch < 128:
+        return _ASCII_PART[ch]
     return _identifier(ch, ID_CONTINUE, _ASCII_PART)
 
 
 def isIdentifierStartES5(ch: int) -> bool:
     """Legacy Unicode 9 BMP letter/Nl policy, matching the previous ES5 API."""
+    if type(ch) is int and 0 <= ch < 128:
+        return _ASCII_START[ch]
     return _identifier(ch, ES5_ID_START, _ASCII_START)
 
 
 def isIdentifierPartES5(ch: int) -> bool:
     """Legacy Unicode 9 BMP ES5 categories and ECMAScript additions."""
+    if type(ch) is int and 0 <= ch < 128:
+        return _ASCII_PART[ch]
     return _identifier(ch, ES5_ID_CONTINUE, _ASCII_PART)
 
 
 def isIdentifierStartES6(ch: int) -> bool:
     """Legacy Unicode 9 ID_Start policy, including astral scalar characters."""
+    if type(ch) is int and 0 <= ch < 128:
+        return _ASCII_START[ch]
     return _identifier(ch, ES6_ID_START, _ASCII_START)
 
 
 def isIdentifierPartES6(ch: int) -> bool:
     """Legacy Unicode 9 ID_Continue policy and ECMAScript additions."""
+    if type(ch) is int and 0 <= ch < 128:
+        return _ASCII_PART[ch]
     return _identifier(ch, ES6_ID_CONTINUE, _ASCII_PART)
