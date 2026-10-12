@@ -1,0 +1,3 @@
+# These vendored Unicode files are verified against upstream byte checksums.
+# Preserve exact source bytes on Windows as well as Unix checkouts.
+data/unicode/** -text
