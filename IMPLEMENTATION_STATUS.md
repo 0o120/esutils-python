@@ -7,7 +7,7 @@ Evidence on Python 3.11 and 3.12:
 
 - New astral, invalid input and modern policy regression tests failed on baseline
   and pass after the repair.
-- Eleven tests pass, including independent exhaustive classification over all
+- Twelve tests pass, including independent exhaustive classification over all
   1,114,112 code points for modern Unicode 17, legacy Unicode 9 ID properties,
   and the legacy BMP ES5 character categories (six predicates total).
 - Vendored source SHA-256 and exact generated-content checks pass offline.

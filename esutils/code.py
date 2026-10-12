@@ -75,6 +75,8 @@ def fromCodePoint(cp: int) -> str:
 
 _ASCII_START = tuple(0x61 <= cp <= 0x7A or 0x41 <= cp <= 0x5A or cp in (0x24, 0x5F) for cp in range(128))
 _ASCII_PART = tuple(_ASCII_START[cp] or 0x30 <= cp <= 0x39 for cp in range(128))
+_ASCII_START_POINTS = frozenset(cp for cp in range(128) if _ASCII_START[cp])
+_ASCII_PART_POINTS = frozenset(cp for cp in range(128) if _ASCII_PART[cp])
 
 
 def _identifier(ch: int, table: tuple[int, ...], ascii_table: tuple[bool, ...]) -> bool:
@@ -90,41 +92,59 @@ def _identifier(ch: int, table: tuple[int, ...], ascii_table: tuple[bool, ...]) 
 
 def isIdentifierStart(ch: int) -> bool:
     """Unicode 17 ID_Start plus ECMAScript dollar and underscore additions."""
-    if type(ch) is int and 0 <= ch < 128:
-        return _ASCII_START[ch]
+    if type(ch) is int:
+        if ch in _ASCII_START_POINTS:
+            return True
+        if ch < 128:
+            return False
     return _identifier(ch, ID_START, _ASCII_START)
 
 
 def isIdentifierPart(ch: int) -> bool:
     """Unicode 17 ID_Continue plus ECMAScript dollar, ZWNJ and ZWJ additions."""
-    if type(ch) is int and 0 <= ch < 128:
-        return _ASCII_PART[ch]
+    if type(ch) is int:
+        if ch in _ASCII_PART_POINTS:
+            return True
+        if ch < 128:
+            return False
     return _identifier(ch, ID_CONTINUE, _ASCII_PART)
 
 
 def isIdentifierStartES5(ch: int) -> bool:
     """Legacy Unicode 9 BMP letter/Nl policy, matching the previous ES5 API."""
-    if type(ch) is int and 0 <= ch < 128:
-        return _ASCII_START[ch]
+    if type(ch) is int:
+        if ch in _ASCII_START_POINTS:
+            return True
+        if ch < 128:
+            return False
     return _identifier(ch, ES5_ID_START, _ASCII_START)
 
 
 def isIdentifierPartES5(ch: int) -> bool:
     """Legacy Unicode 9 BMP ES5 categories and ECMAScript additions."""
-    if type(ch) is int and 0 <= ch < 128:
-        return _ASCII_PART[ch]
+    if type(ch) is int:
+        if ch in _ASCII_PART_POINTS:
+            return True
+        if ch < 128:
+            return False
     return _identifier(ch, ES5_ID_CONTINUE, _ASCII_PART)
 
 
 def isIdentifierStartES6(ch: int) -> bool:
     """Legacy Unicode 9 ID_Start policy, including astral scalar characters."""
-    if type(ch) is int and 0 <= ch < 128:
-        return _ASCII_START[ch]
+    if type(ch) is int:
+        if ch in _ASCII_START_POINTS:
+            return True
+        if ch < 128:
+            return False
     return _identifier(ch, ES6_ID_START, _ASCII_START)
 
 
 def isIdentifierPartES6(ch: int) -> bool:
     """Legacy Unicode 9 ID_Continue policy and ECMAScript additions."""
-    if type(ch) is int and 0 <= ch < 128:
-        return _ASCII_PART[ch]
+    if type(ch) is int:
+        if ch in _ASCII_PART_POINTS:
+            return True
+        if ch < 128:
+            return False
     return _identifier(ch, ES6_ID_CONTINUE, _ASCII_PART)

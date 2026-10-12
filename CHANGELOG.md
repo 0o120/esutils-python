@@ -2,6 +2,9 @@
 
 ## 2.0.0 — unreleased
 
+- Use typed ASCII set membership before Unicode lookup; integer subclasses retain
+  the checked scalar path and do not need to be hashable.
+
 - Require Python 3.11+; retain focused `code` API and upstream author notices.
 - Add explicit Unicode 17 modern identifier predicates with offline generated data.
 - Repair Unicode 9 ES6 astral classification; preserve legacy ES5 BMP policy.
