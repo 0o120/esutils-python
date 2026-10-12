@@ -44,6 +44,15 @@ class CodeTests(unittest.TestCase):
                 with self.assertRaises(TypeError):
                     predicate(invalid)
 
+    def test_private_ord_paths_match_public_unicode17_policy_exhaustively(self):
+        for cp in range(0x110000):
+            # ord(chr(cp)) also models unpaired surrogates in Python strings.
+            value = ord(chr(cp))
+            if code._identifier_start_from_ord(value) != code.isIdentifierStart(cp):
+                self.fail(f"Private start policy differs at U+{cp:04X}")
+            if code._identifier_part_from_ord(value) != code.isIdentifierPart(cp):
+                self.fail(f"Private part policy differs at U+{cp:04X}")
+
     def test_from_code_point_returns_scalar(self):
         self.assertEqual(code.fromCodePoint(0x10400), chr(0x10400))
         for cp in (-1, 0x110000, 0xD800):

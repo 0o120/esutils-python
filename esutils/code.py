@@ -79,6 +79,25 @@ _ASCII_START_POINTS = frozenset(cp for cp in range(128) if _ASCII_START[cp])
 _ASCII_PART_POINTS = frozenset(cp for cp in range(128) if _ASCII_PART[cp])
 
 
+def _identifier_start_from_ord(ch: int) -> bool:
+    """Private hot path for values obtained directly from ord(one_character).
+
+    The caller guarantees an exact integer in [0, 0x10FFFF]. Surrogate values
+    are excluded by the pinned ID_Start table. Public scalar/type validation
+    remains in isIdentifierStart; this helper is deliberately not exported.
+    """
+    if ch < 128:
+        return _ASCII_START[ch]
+    return bool(bisect_right(ID_START, ch) & 1)
+
+
+def _identifier_part_from_ord(ch: int) -> bool:
+    """Private ord-domain path; surrogate values are not identifier parts."""
+    if ch < 128:
+        return _ASCII_PART[ch]
+    return bool(bisect_right(ID_CONTINUE, ch) & 1)
+
+
 def _identifier(ch: int, table: tuple[int, ...], ascii_table: tuple[bool, ...]) -> bool:
     if type(ch) is int:
         if not 0 <= ch <= 0x10FFFF or 0xD800 <= ch <= 0xDFFF:
