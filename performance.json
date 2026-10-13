@@ -1,0 +1,910 @@
+{
+  "python": "3.12.0 (tags/v3.12.0:0fb18b0, Oct  2 2023, 13:03:39) [MSC v.1935 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.19045-SP0",
+  "method": {
+    "startup": "Uninstrumented fresh source-only interpreter timings. Separate fresh-interpreter tracemalloc allocation samples. Both versions preload the same json/sys/time/tracemalloc harness; OS caches may be warm.",
+    "walker": "Same ES2017 mapping tree converted to the same SimpleNamespace representation for baseline/current; conversion excluded; callback counts verified. Modern mapping traversal measured separately.",
+    "memory": "Peak incremental traversal allocation after tree construction, not total retained AST memory.",
+    "utilities": "Same valid code-point inputs and legacy ES6 policies, plus modern Unicode17. Incorrect old astral behavior is separately exposed and not treated as equivalent correctness."
+  },
+  "startup": {
+    "acornwalk": {
+      "baseline": {
+        "medianSeconds": 0.005235999939031899,
+        "samples": [
+          {
+            "module": "<workspace>/implementation-artifacts/performance-acornwalk-baseline/acornwalk/__init__.py",
+            "seconds": 0.005062200012616813
+          },
+          {
+            "module": "<workspace>/implementation-artifacts/performance-acornwalk-baseline/acornwalk/__init__.py",
+            "seconds": 0.005616000038571656
+          },
+          {
+            "module": "<workspace>/implementation-artifacts/performance-acornwalk-baseline/acornwalk/__init__.py",
+            "seconds": 0.005430700024589896
+          },
+          {
+            "module": "<workspace>/implementation-artifacts/performance-acornwalk-baseline/acornwalk/__init__.py",
+            "seconds": 0.004842400085180998
+          },
+          {
+            "module": "<workspace>/implementation-artifacts/performance-acornwalk-baseline/acornwalk/__init__.py",
+            "seconds": 0.005235999939031899
+          },
+          {
+            "module": "<workspace>/implementation-artifacts/performance-acornwalk-baseline/acornwalk/__init__.py",
+            "seconds": 0.006091099930927157
+          },
+          {
+            "module": "<workspace>/implementation-artifacts/performance-acornwalk-baseline/acornwalk/__init__.py",
+            "seconds": 0.005746099981479347
+          },
+          {
+            "module": "<workspace>/implementation-artifacts/performance-acornwalk-baseline/acornwalk/__init__.py",
+            "seconds": 0.0048322000075131655
+          },
+          {
+            "module": "<workspace>/implementation-artifacts/performance-acornwalk-baseline/acornwalk/__init__.py",
+            "seconds": 0.005169600015506148
+          }
+        ]
+      },
+      "current": {
+        "medianSeconds": 0.00883169996086508,
+        "samples": [
+          {
+            "module": "<workspace>/acornwalk-python/acornwalk/__init__.py",
+            "seconds": 0.008569699944928288
+          },
+          {
+            "module": "<workspace>/acornwalk-python/acornwalk/__init__.py",
+            "seconds": 0.009165799943730235
+          },
+          {
+            "module": "<workspace>/acornwalk-python/acornwalk/__init__.py",
+            "seconds": 0.009430199977941811
+          },
+          {
+            "module": "<workspace>/acornwalk-python/acornwalk/__init__.py",
+            "seconds": 0.008707800065167248
+          },
+          {
+            "module": "<workspace>/acornwalk-python/acornwalk/__init__.py",
+            "seconds": 0.008858099929057062
+          },
+          {
+            "module": "<workspace>/acornwalk-python/acornwalk/__init__.py",
+            "seconds": 0.00883169996086508
+          },
+          {
+            "module": "<workspace>/acornwalk-python/acornwalk/__init__.py",
+            "seconds": 0.008056799997575581
+          },
+          {
+            "module": "<workspace>/acornwalk-python/acornwalk/__init__.py",
+            "seconds": 0.008217399939894676
+          },
+          {
+            "module": "<workspace>/acornwalk-python/acornwalk/__init__.py",
+            "seconds": 0.009754700004123151
+          }
+        ]
+      }
+    },
+    "esutils": {
+      "baseline": {
+        "medianSeconds": 0.024392800056375563,
+        "samples": [
+          {
+            "module": "<workspace>/implementation-artifacts/performance-esutils-baseline/esutils/__init__.py",
+            "seconds": 0.02496199996676296
+          },
+          {
+            "module": "<workspace>/implementation-artifacts/performance-esutils-baseline/esutils/__init__.py",
+            "seconds": 0.025773399975150824
+          },
+          {
+            "module": "<workspace>/implementation-artifacts/performance-esutils-baseline/esutils/__init__.py",
+            "seconds": 0.023812800063751638
+          },
+          {
+            "module": "<workspace>/implementation-artifacts/performance-esutils-baseline/esutils/__init__.py",
+            "seconds": 0.02247590001206845
+          },
+          {
+            "module": "<workspace>/implementation-artifacts/performance-esutils-baseline/esutils/__init__.py",
+            "seconds": 0.025713999988511205
+          },
+          {
+            "module": "<workspace>/implementation-artifacts/performance-esutils-baseline/esutils/__init__.py",
+            "seconds": 0.024627699982374907
+          },
+          {
+            "module": "<workspace>/implementation-artifacts/performance-esutils-baseline/esutils/__init__.py",
+            "seconds": 0.02358270005788654
+          },
+          {
+            "module": "<workspace>/implementation-artifacts/performance-esutils-baseline/esutils/__init__.py",
+            "seconds": 0.023248499957844615
+          },
+          {
+            "module": "<workspace>/implementation-artifacts/performance-esutils-baseline/esutils/__init__.py",
+            "seconds": 0.024392800056375563
+          }
+        ]
+      },
+      "current": {
+        "medianSeconds": 0.014904299983754754,
+        "samples": [
+          {
+            "module": "<workspace>/esutils-python/esutils/__init__.py",
+            "seconds": 0.014524700003676116
+          },
+          {
+            "module": "<workspace>/esutils-python/esutils/__init__.py",
+            "seconds": 0.015295700053684413
+          },
+          {
+            "module": "<workspace>/esutils-python/esutils/__init__.py",
+            "seconds": 0.01532580005005002
+          },
+          {
+            "module": "<workspace>/esutils-python/esutils/__init__.py",
+            "seconds": 0.014904299983754754
+          },
+          {
+            "module": "<workspace>/esutils-python/esutils/__init__.py",
+            "seconds": 0.016433800105005503
+          },
+          {
+            "module": "<workspace>/esutils-python/esutils/__init__.py",
+            "seconds": 0.014808299951255322
+          },
+          {
+            "module": "<workspace>/esutils-python/esutils/__init__.py",
+            "seconds": 0.014218700001947582
+          },
+          {
+            "module": "<workspace>/esutils-python/esutils/__init__.py",
+            "seconds": 0.014680400025099516
+          },
+          {
+            "module": "<workspace>/esutils-python/esutils/__init__.py",
+            "seconds": 0.015170600032433867
+          }
+        ]
+      }
+    }
+  },
+  "importAllocation": {
+    "acornwalk": {
+      "baseline": {
+        "medianPeakBytes": 1838253,
+        "medianRetainedBytes": 85594,
+        "samples": [
+          {
+            "module": "<workspace>/implementation-artifacts/performance-acornwalk-baseline/acornwalk/__init__.py",
+            "peakBytes": 1838253,
+            "retainedBytes": 85594
+          },
+          {
+            "module": "<workspace>/implementation-artifacts/performance-acornwalk-baseline/acornwalk/__init__.py",
+            "peakBytes": 1838253,
+            "retainedBytes": 85594
+          },
+          {
+            "module": "<workspace>/implementation-artifacts/performance-acornwalk-baseline/acornwalk/__init__.py",
+            "peakBytes": 1838253,
+            "retainedBytes": 85594
+          },
+          {
+            "module": "<workspace>/implementation-artifacts/performance-acornwalk-baseline/acornwalk/__init__.py",
+            "peakBytes": 1838253,
+            "retainedBytes": 85594
+          },
+          {
+            "module": "<workspace>/implementation-artifacts/performance-acornwalk-baseline/acornwalk/__init__.py",
+            "peakBytes": 1838253,
+            "retainedBytes": 85594
+          },
+          {
+            "module": "<workspace>/implementation-artifacts/performance-acornwalk-baseline/acornwalk/__init__.py",
+            "peakBytes": 1838253,
+            "retainedBytes": 85594
+          },
+          {
+            "module": "<workspace>/implementation-artifacts/performance-acornwalk-baseline/acornwalk/__init__.py",
+            "peakBytes": 1838253,
+            "retainedBytes": 85594
+          },
+          {
+            "module": "<workspace>/implementation-artifacts/performance-acornwalk-baseline/acornwalk/__init__.py",
+            "peakBytes": 1838253,
+            "retainedBytes": 85594
+          },
+          {
+            "module": "<workspace>/implementation-artifacts/performance-acornwalk-baseline/acornwalk/__init__.py",
+            "peakBytes": 1838253,
+            "retainedBytes": 85594
+          }
+        ]
+      },
+      "current": {
+        "medianPeakBytes": 2759184,
+        "medianRetainedBytes": 129699,
+        "samples": [
+          {
+            "module": "<workspace>/acornwalk-python/acornwalk/__init__.py",
+            "peakBytes": 2759184,
+            "retainedBytes": 129699
+          },
+          {
+            "module": "<workspace>/acornwalk-python/acornwalk/__init__.py",
+            "peakBytes": 2759139,
+            "retainedBytes": 129654
+          },
+          {
+            "module": "<workspace>/acornwalk-python/acornwalk/__init__.py",
+            "peakBytes": 2759184,
+            "retainedBytes": 129699
+          },
+          {
+            "module": "<workspace>/acornwalk-python/acornwalk/__init__.py",
+            "peakBytes": 2759184,
+            "retainedBytes": 129699
+          },
+          {
+            "module": "<workspace>/acornwalk-python/acornwalk/__init__.py",
+            "peakBytes": 2759184,
+            "retainedBytes": 129699
+          },
+          {
+            "module": "<workspace>/acornwalk-python/acornwalk/__init__.py",
+            "peakBytes": 2759184,
+            "retainedBytes": 129699
+          },
+          {
+            "module": "<workspace>/acornwalk-python/acornwalk/__init__.py",
+            "peakBytes": 2759184,
+            "retainedBytes": 129699
+          },
+          {
+            "module": "<workspace>/acornwalk-python/acornwalk/__init__.py",
+            "peakBytes": 2759184,
+            "retainedBytes": 129699
+          },
+          {
+            "module": "<workspace>/acornwalk-python/acornwalk/__init__.py",
+            "peakBytes": 2759184,
+            "retainedBytes": 129699
+          }
+        ]
+      }
+    },
+    "esutils": {
+      "baseline": {
+        "medianPeakBytes": 356104,
+        "medianRetainedBytes": 106778,
+        "samples": [
+          {
+            "module": "<workspace>/implementation-artifacts/performance-esutils-baseline/esutils/__init__.py",
+            "peakBytes": 356104,
+            "retainedBytes": 106778
+          },
+          {
+            "module": "<workspace>/implementation-artifacts/performance-esutils-baseline/esutils/__init__.py",
+            "peakBytes": 356104,
+            "retainedBytes": 106778
+          },
+          {
+            "module": "<workspace>/implementation-artifacts/performance-esutils-baseline/esutils/__init__.py",
+            "peakBytes": 356104,
+            "retainedBytes": 106778
+          },
+          {
+            "module": "<workspace>/implementation-artifacts/performance-esutils-baseline/esutils/__init__.py",
+            "peakBytes": 356104,
+            "retainedBytes": 106733
+          },
+          {
+            "module": "<workspace>/implementation-artifacts/performance-esutils-baseline/esutils/__init__.py",
+            "peakBytes": 356104,
+            "retainedBytes": 106778
+          },
+          {
+            "module": "<workspace>/implementation-artifacts/performance-esutils-baseline/esutils/__init__.py",
+            "peakBytes": 356104,
+            "retainedBytes": 106733
+          },
+          {
+            "module": "<workspace>/implementation-artifacts/performance-esutils-baseline/esutils/__init__.py",
+            "peakBytes": 356104,
+            "retainedBytes": 106733
+          },
+          {
+            "module": "<workspace>/implementation-artifacts/performance-esutils-baseline/esutils/__init__.py",
+            "peakBytes": 356104,
+            "retainedBytes": 106778
+          },
+          {
+            "module": "<workspace>/implementation-artifacts/performance-esutils-baseline/esutils/__init__.py",
+            "peakBytes": 356104,
+            "retainedBytes": 106733
+          }
+        ]
+      },
+      "current": {
+        "medianPeakBytes": 6491609,
+        "medianRetainedBytes": 151206,
+        "samples": [
+          {
+            "module": "<workspace>/esutils-python/esutils/__init__.py",
+            "peakBytes": 6491609,
+            "retainedBytes": 151161
+          },
+          {
+            "module": "<workspace>/esutils-python/esutils/__init__.py",
+            "peakBytes": 6491609,
+            "retainedBytes": 151161
+          },
+          {
+            "module": "<workspace>/esutils-python/esutils/__init__.py",
+            "peakBytes": 6491609,
+            "retainedBytes": 151206
+          },
+          {
+            "module": "<workspace>/esutils-python/esutils/__init__.py",
+            "peakBytes": 6491609,
+            "retainedBytes": 151206
+          },
+          {
+            "module": "<workspace>/esutils-python/esutils/__init__.py",
+            "peakBytes": 6491609,
+            "retainedBytes": 151206
+          },
+          {
+            "module": "<workspace>/esutils-python/esutils/__init__.py",
+            "peakBytes": 6491609,
+            "retainedBytes": 151161
+          },
+          {
+            "module": "<workspace>/esutils-python/esutils/__init__.py",
+            "peakBytes": 6491609,
+            "retainedBytes": 151206
+          },
+          {
+            "module": "<workspace>/esutils-python/esutils/__init__.py",
+            "peakBytes": 6491609,
+            "retainedBytes": 151206
+          },
+          {
+            "module": "<workspace>/esutils-python/esutils/__init__.py",
+            "peakBytes": 6491609,
+            "retainedBytes": 151206
+          }
+        ]
+      }
+    }
+  },
+  "walker": {
+    "mappingTreeSha256": "c8df39863e196b2293273023c993b5aaac5ace256a2bbdcd7d1bb2be7c7f2867",
+    "sourceFixtureBytes": 472,
+    "baseline": {
+      "nodeCallbacks": 91,
+      "medianSeconds": 7.380699971690775e-05,
+      "samplesSeconds": [
+        8.493599947541953e-05,
+        7.301599951460958e-05,
+        7.15329998638481e-05,
+        7.350599975325167e-05,
+        7.459200103767217e-05,
+        7.612699992023408e-05,
+        7.161400048062205e-05,
+        7.397299981676042e-05,
+        7.380699971690775e-05
+      ],
+      "peakTraversalBytes": 712,
+      "representation": "native",
+      "module": "<workspace>/implementation-artifacts/performance-acornwalk-baseline/acornwalk/__init__.py"
+    },
+    "current": {
+      "nodeCallbacks": 91,
+      "medianSeconds": 0.0001333600003272295,
+      "samplesSeconds": [
+        0.0001373109989799559,
+        0.0001318769995123148,
+        0.00014027199940755964,
+        0.00014076700084842742,
+        0.0001319059997331351,
+        0.0001333600003272295,
+        0.00013066799961961807,
+        0.000145002999342978,
+        0.00012887599994428455
+      ],
+      "peakTraversalBytes": 776,
+      "representation": "native",
+      "module": "<workspace>/acornwalk-python/acornwalk/__init__.py"
+    },
+    "currentMapping": {
+      "nodeCallbacks": 91,
+      "medianSeconds": 0.0001195509999524802,
+      "samplesSeconds": [
+        0.00012268000049516558,
+        0.00012548500089906156,
+        0.00011824299930594862,
+        0.00011703600059263408,
+        0.00012678400031290949,
+        0.0001195509999524802,
+        0.00012377499951981007,
+        0.0001183800003491342,
+        0.00011717100045643747
+      ],
+      "peakTraversalBytes": 776,
+      "representation": "mapping",
+      "module": "<workspace>/acornwalk-python/acornwalk/__init__.py"
+    },
+    "currentToBaselineRatio": 1.806874698046821
+  },
+  "utilities": {
+    "baseline": {
+      "module": "<workspace>/implementation-artifacts/performance-esutils-baseline/esutils/code.py",
+      "rows": [
+        {
+          "policy": "legacyES6",
+          "workload": "ascii",
+          "points": [
+            36,
+            65,
+            90,
+            95,
+            97,
+            122,
+            48,
+            57
+          ],
+          "classification": [
+            [
+              true,
+              true
+            ],
+            [
+              true,
+              true
+            ],
+            [
+              true,
+              true
+            ],
+            [
+              true,
+              true
+            ],
+            [
+              true,
+              true
+            ],
+            [
+              true,
+              true
+            ],
+            [
+              false,
+              true
+            ],
+            [
+              false,
+              true
+            ]
+          ],
+          "operationsPerSample": 320000,
+          "medianSeconds": 0.028460899950005114,
+          "operationsPerSecond": 11243495.481946012,
+          "samplesSeconds": [
+            0.0274629999184981,
+            0.029368900111876428,
+            0.028658200055360794,
+            0.028152400045655668,
+            0.028496499988250434,
+            0.028460899950005114,
+            0.02836250001564622
+          ]
+        },
+        {
+          "policy": "legacyES6",
+          "workload": "bmp",
+          "points": [
+            233,
+            768,
+            7312,
+            8204
+          ],
+          "classification": [
+            [
+              true,
+              true
+            ],
+            [
+              false,
+              true
+            ],
+            [
+              false,
+              false
+            ],
+            [
+              false,
+              true
+            ]
+          ],
+          "operationsPerSample": 160000,
+          "medianSeconds": 0.07074979995377362,
+          "operationsPerSecond": 2261490.493323522,
+          "samplesSeconds": [
+            0.06958659994415939,
+            0.07150800002273172,
+            0.07074979995377362,
+            0.07059819996356964,
+            0.07142210006713867,
+            0.07030709995888174,
+            0.0716703999787569
+          ]
+        },
+        {
+          "policy": "legacyES6",
+          "workload": "astral",
+          "points": [
+            66560,
+            119808,
+            128512
+          ],
+          "classification": [
+            [
+              false,
+              false
+            ],
+            [
+              false,
+              false
+            ],
+            [
+              false,
+              false
+            ]
+          ],
+          "operationsPerSample": 120000,
+          "medianSeconds": 0.05608259991277009,
+          "operationsPerSecond": 2139701.087086653,
+          "samplesSeconds": [
+            0.05764359992463142,
+            0.05660190002527088,
+            0.05600820004474372,
+            0.05608259991277009,
+            0.0558398999273777,
+            0.05580910004209727,
+            0.056543300044722855
+          ]
+        }
+      ]
+    },
+    "current": {
+      "module": "<workspace>/esutils-python/esutils/code.py",
+      "rows": [
+        {
+          "policy": "legacyES6",
+          "workload": "ascii",
+          "points": [
+            36,
+            65,
+            90,
+            95,
+            97,
+            122,
+            48,
+            57
+          ],
+          "classification": [
+            [
+              true,
+              true
+            ],
+            [
+              true,
+              true
+            ],
+            [
+              true,
+              true
+            ],
+            [
+              true,
+              true
+            ],
+            [
+              true,
+              true
+            ],
+            [
+              true,
+              true
+            ],
+            [
+              false,
+              true
+            ],
+            [
+              false,
+              true
+            ]
+          ],
+          "operationsPerSample": 320000,
+          "medianSeconds": 0.043548000045120716,
+          "operationsPerSecond": 7348213.457987585,
+          "samplesSeconds": [
+            0.04499480000231415,
+            0.043613400077447295,
+            0.042507899925112724,
+            0.043548000045120716,
+            0.04262550000566989,
+            0.04234980000182986,
+            0.043928800034336746
+          ]
+        },
+        {
+          "policy": "legacyES6",
+          "workload": "bmp",
+          "points": [
+            233,
+            768,
+            7312,
+            8204
+          ],
+          "classification": [
+            [
+              true,
+              true
+            ],
+            [
+              false,
+              true
+            ],
+            [
+              false,
+              false
+            ],
+            [
+              false,
+              true
+            ]
+          ],
+          "operationsPerSample": 160000,
+          "medianSeconds": 0.06851640006061643,
+          "operationsPerSecond": 2335207.3351554964,
+          "samplesSeconds": [
+            0.07101409998722374,
+            0.06886230001691729,
+            0.06817710003815591,
+            0.06851640006061643,
+            0.06949269992765039,
+            0.06814879993908107,
+            0.06845669995527714
+          ]
+        },
+        {
+          "policy": "legacyES6",
+          "workload": "astral",
+          "points": [
+            66560,
+            119808,
+            128512
+          ],
+          "classification": [
+            [
+              true,
+              true
+            ],
+            [
+              true,
+              true
+            ],
+            [
+              false,
+              false
+            ]
+          ],
+          "operationsPerSample": 120000,
+          "medianSeconds": 0.05463610007427633,
+          "operationsPerSecond": 2196350.029318769,
+          "samplesSeconds": [
+            0.05478340003173798,
+            0.054901600000448525,
+            0.05347140005324036,
+            0.054479600046761334,
+            0.05512549995910376,
+            0.05339869996532798,
+            0.05463610007427633
+          ]
+        },
+        {
+          "policy": "modernUnicode17",
+          "workload": "ascii",
+          "points": [
+            36,
+            65,
+            90,
+            95,
+            97,
+            122,
+            48,
+            57
+          ],
+          "classification": [
+            [
+              true,
+              true
+            ],
+            [
+              true,
+              true
+            ],
+            [
+              true,
+              true
+            ],
+            [
+              true,
+              true
+            ],
+            [
+              true,
+              true
+            ],
+            [
+              true,
+              true
+            ],
+            [
+              false,
+              true
+            ],
+            [
+              false,
+              true
+            ]
+          ],
+          "operationsPerSample": 320000,
+          "medianSeconds": 0.043114000000059605,
+          "operationsPerSecond": 7422183.049579199,
+          "samplesSeconds": [
+            0.04294149996712804,
+            0.04331950005143881,
+            0.04312379995826632,
+            0.04300019994843751,
+            0.043174799997359514,
+            0.043114000000059605,
+            0.04219409998040646
+          ]
+        },
+        {
+          "policy": "modernUnicode17",
+          "workload": "bmp",
+          "points": [
+            233,
+            768,
+            7312,
+            8204
+          ],
+          "classification": [
+            [
+              true,
+              true
+            ],
+            [
+              false,
+              true
+            ],
+            [
+              true,
+              true
+            ],
+            [
+              false,
+              true
+            ]
+          ],
+          "operationsPerSample": 160000,
+          "medianSeconds": 0.06857470003888011,
+          "operationsPerSecond": 2333222.017876623,
+          "samplesSeconds": [
+            0.06788390001747757,
+            0.06864880002103746,
+            0.06895179999992251,
+            0.06845979997888207,
+            0.06818820000626147,
+            0.06945399998221546,
+            0.06857470003888011
+          ]
+        },
+        {
+          "policy": "modernUnicode17",
+          "workload": "astral",
+          "points": [
+            66560,
+            119808,
+            128512
+          ],
+          "classification": [
+            [
+              true,
+              true
+            ],
+            [
+              true,
+              true
+            ],
+            [
+              false,
+              false
+            ]
+          ],
+          "operationsPerSample": 120000,
+          "medianSeconds": 0.05513150000479072,
+          "operationsPerSecond": 2176614.095200973,
+          "samplesSeconds": [
+            0.05547709995880723,
+            0.055017500068061054,
+            0.055226200027391315,
+            0.054374200059100986,
+            0.05509829998482019,
+            0.05513150000479072,
+            0.05635169998276979
+          ]
+        }
+      ]
+    }
+  },
+  "revisions": {
+    "acornwalk": {
+      "baseline": {
+        "sourceSha256": {
+          "acornwalk\\__init__.py": "af7a0552934ee1210cde9a1937cb4c3712127d2dcec0653eb8241dda4ee67445",
+          "acornwalk\\walk.py": "62b257b4f82c278fecaa7ca96adb1817ab968866ee4b2bba5136d47a43122e2a"
+        },
+        "gitHead": "0f8e69a014fd3b6e5706dc8f3a52a25ca084f614"
+      },
+      "current": {
+        "sourceSha256": {
+          "acornwalk\\__init__.py": "e9b02c03c607277911761a8fce9312c8241e7439435305da9306360619ff4304",
+          "acornwalk\\_version.py": "ffb3a541d6d590ae2369dd022dda48d20ad3fb31006feaa01661f9985cc35e20",
+          "acornwalk\\walk.py": "19e4f20e67e4e8df80d539fa2f89ff7bb4739266774f3020c18508737cba50c5"
+        },
+        "gitHead": "a63172b7e01e201fb36f3870ad3c9ca553a95e14",
+        "workingTreeStatus": ""
+      }
+    },
+    "esutils": {
+      "baseline": {
+        "sourceSha256": {
+          "esutils\\__init__.py": "d035848f30d93e4c2ff368e05eb275fa607e5a6579197a191c634a8b56d44d35",
+          "esutils\\code.py": "118230e338e70cb7b6dff0ff4eebb08879d26c19fe80dc441366beff5a054a75"
+        },
+        "gitHead": "ce16f4e76b257eed9670f7ca47cd79b794fce278"
+      },
+      "current": {
+        "sourceSha256": {
+          "esutils\\__init__.py": "e23e3d0e323aee7c263e2fac02a72c7a117264816cf661576e666d23083f0560",
+          "esutils\\_unicode_data.py": "04a57cb87f48928e44079ac384cb18766c77b1111647cbbf1fb9afb5225fadce",
+          "esutils\\_version.py": "ffb3a541d6d590ae2369dd022dda48d20ad3fb31006feaa01661f9985cc35e20",
+          "esutils\\code.py": "db485cc99b71a99c8d01e0a61d362b8161bbd303ef8daff699e480a8b84f0cf4"
+        },
+        "gitHead": "70480a34aa481a5c1ba8be4c113ad1f54e23935e",
+        "workingTreeStatus": ""
+      }
+    }
+  },
+  "interpretation": [
+    "The modern walker validates node kinds and supports mappings, aliases, ranges, JSX, and custom protocols; the original walker supports a narrower native-node contract. Timings are absolute costs on one 91-node tree, not a general complexity claim.",
+    "Source-only import peaks include compilation allocations. Current walker imports a small collection of stdlib helpers and avoids eager typing/dataclass dependencies; current utility imports generated Unicode tables.",
+    "Utility legacy ES6 throughput uses identical inputs, but the old astral results are incorrect. Unicode17 classification and scalar/type validation are additional work."
+  ]
+}
