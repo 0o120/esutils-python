@@ -47,5 +47,5 @@ packages = ["esutils"]
 [tool.hatch.build.targets.sdist]
 include = ["/esutils", "/data", "/tests", "/tools", "/.github", "/LICENSE", "/README.md",
     "/pyproject.toml", "/requirements-dev.in", "/requirements-dev.lock",
-    "/CHANGELOG.md", "/CONTRIBUTING.md", "/RELEASING.md", "/IMPLEMENTATION_STATUS.md",
+    "/CHANGELOG.md", "/CONTRIBUTING.md", "/RELEASING.md",
     "/PERFORMANCE.md", "/performance.json", "/performance-round2.json"]

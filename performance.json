@@ -13,39 +13,39 @@
         "medianSeconds": 0.005235999939031899,
         "samples": [
           {
-            "module": "C:\\Github\\old_repos\\implementation-artifacts\\performance-acornwalk-baseline\\acornwalk\\__init__.py",
+            "module": "<workspace>/implementation-artifacts/performance-acornwalk-baseline/acornwalk/__init__.py",
             "seconds": 0.005062200012616813
           },
           {
-            "module": "C:\\Github\\old_repos\\implementation-artifacts\\performance-acornwalk-baseline\\acornwalk\\__init__.py",
+            "module": "<workspace>/implementation-artifacts/performance-acornwalk-baseline/acornwalk/__init__.py",
             "seconds": 0.005616000038571656
           },
           {
-            "module": "C:\\Github\\old_repos\\implementation-artifacts\\performance-acornwalk-baseline\\acornwalk\\__init__.py",
+            "module": "<workspace>/implementation-artifacts/performance-acornwalk-baseline/acornwalk/__init__.py",
             "seconds": 0.005430700024589896
           },
           {
-            "module": "C:\\Github\\old_repos\\implementation-artifacts\\performance-acornwalk-baseline\\acornwalk\\__init__.py",
+            "module": "<workspace>/implementation-artifacts/performance-acornwalk-baseline/acornwalk/__init__.py",
             "seconds": 0.004842400085180998
           },
           {
-            "module": "C:\\Github\\old_repos\\implementation-artifacts\\performance-acornwalk-baseline\\acornwalk\\__init__.py",
+            "module": "<workspace>/implementation-artifacts/performance-acornwalk-baseline/acornwalk/__init__.py",
             "seconds": 0.005235999939031899
           },
           {
-            "module": "C:\\Github\\old_repos\\implementation-artifacts\\performance-acornwalk-baseline\\acornwalk\\__init__.py",
+            "module": "<workspace>/implementation-artifacts/performance-acornwalk-baseline/acornwalk/__init__.py",
             "seconds": 0.006091099930927157
           },
           {
-            "module": "C:\\Github\\old_repos\\implementation-artifacts\\performance-acornwalk-baseline\\acornwalk\\__init__.py",
+            "module": "<workspace>/implementation-artifacts/performance-acornwalk-baseline/acornwalk/__init__.py",
             "seconds": 0.005746099981479347
           },
           {
-            "module": "C:\\Github\\old_repos\\implementation-artifacts\\performance-acornwalk-baseline\\acornwalk\\__init__.py",
+            "module": "<workspace>/implementation-artifacts/performance-acornwalk-baseline/acornwalk/__init__.py",
             "seconds": 0.0048322000075131655
           },
           {
-            "module": "C:\\Github\\old_repos\\implementation-artifacts\\performance-acornwalk-baseline\\acornwalk\\__init__.py",
+            "module": "<workspace>/implementation-artifacts/performance-acornwalk-baseline/acornwalk/__init__.py",
             "seconds": 0.005169600015506148
           }
         ]
@@ -54,39 +54,39 @@
         "medianSeconds": 0.00883169996086508,
         "samples": [
           {
-            "module": "C:\\Github\\old_repos\\acornwalk-python\\acornwalk\\__init__.py",
+            "module": "<workspace>/acornwalk-python/acornwalk/__init__.py",
             "seconds": 0.008569699944928288
           },
           {
-            "module": "C:\\Github\\old_repos\\acornwalk-python\\acornwalk\\__init__.py",
+            "module": "<workspace>/acornwalk-python/acornwalk/__init__.py",
             "seconds": 0.009165799943730235
           },
           {
-            "module": "C:\\Github\\old_repos\\acornwalk-python\\acornwalk\\__init__.py",
+            "module": "<workspace>/acornwalk-python/acornwalk/__init__.py",
             "seconds": 0.009430199977941811
           },
           {
-            "module": "C:\\Github\\old_repos\\acornwalk-python\\acornwalk\\__init__.py",
+            "module": "<workspace>/acornwalk-python/acornwalk/__init__.py",
             "seconds": 0.008707800065167248
           },
           {
-            "module": "C:\\Github\\old_repos\\acornwalk-python\\acornwalk\\__init__.py",
+            "module": "<workspace>/acornwalk-python/acornwalk/__init__.py",
             "seconds": 0.008858099929057062
           },
           {
-            "module": "C:\\Github\\old_repos\\acornwalk-python\\acornwalk\\__init__.py",
+            "module": "<workspace>/acornwalk-python/acornwalk/__init__.py",
             "seconds": 0.00883169996086508
           },
           {
-            "module": "C:\\Github\\old_repos\\acornwalk-python\\acornwalk\\__init__.py",
+            "module": "<workspace>/acornwalk-python/acornwalk/__init__.py",
             "seconds": 0.008056799997575581
           },
           {
-            "module": "C:\\Github\\old_repos\\acornwalk-python\\acornwalk\\__init__.py",
+            "module": "<workspace>/acornwalk-python/acornwalk/__init__.py",
             "seconds": 0.008217399939894676
           },
           {
-            "module": "C:\\Github\\old_repos\\acornwalk-python\\acornwalk\\__init__.py",
+            "module": "<workspace>/acornwalk-python/acornwalk/__init__.py",
             "seconds": 0.009754700004123151
           }
         ]
@@ -97,39 +97,39 @@
         "medianSeconds": 0.024392800056375563,
         "samples": [
           {
-            "module": "C:\\Github\\old_repos\\implementation-artifacts\\performance-esutils-baseline\\esutils\\__init__.py",
+            "module": "<workspace>/implementation-artifacts/performance-esutils-baseline/esutils/__init__.py",
             "seconds": 0.02496199996676296
           },
           {
-            "module": "C:\\Github\\old_repos\\implementation-artifacts\\performance-esutils-baseline\\esutils\\__init__.py",
+            "module": "<workspace>/implementation-artifacts/performance-esutils-baseline/esutils/__init__.py",
             "seconds": 0.025773399975150824
           },
           {
-            "module": "C:\\Github\\old_repos\\implementation-artifacts\\performance-esutils-baseline\\esutils\\__init__.py",
+            "module": "<workspace>/implementation-artifacts/performance-esutils-baseline/esutils/__init__.py",
             "seconds": 0.023812800063751638
           },
           {
-            "module": "C:\\Github\\old_repos\\implementation-artifacts\\performance-esutils-baseline\\esutils\\__init__.py",
+            "module": "<workspace>/implementation-artifacts/performance-esutils-baseline/esutils/__init__.py",
             "seconds": 0.02247590001206845
           },
           {
-            "module": "C:\\Github\\old_repos\\implementation-artifacts\\performance-esutils-baseline\\esutils\\__init__.py",
+            "module": "<workspace>/implementation-artifacts/performance-esutils-baseline/esutils/__init__.py",
             "seconds": 0.025713999988511205
           },
           {
-            "module": "C:\\Github\\old_repos\\implementation-artifacts\\performance-esutils-baseline\\esutils\\__init__.py",
+            "module": "<workspace>/implementation-artifacts/performance-esutils-baseline/esutils/__init__.py",
             "seconds": 0.024627699982374907
           },
           {
-            "module": "C:\\Github\\old_repos\\implementation-artifacts\\performance-esutils-baseline\\esutils\\__init__.py",
+            "module": "<workspace>/implementation-artifacts/performance-esutils-baseline/esutils/__init__.py",
             "seconds": 0.02358270005788654
           },
           {
-            "module": "C:\\Github\\old_repos\\implementation-artifacts\\performance-esutils-baseline\\esutils\\__init__.py",
+            "module": "<workspace>/implementation-artifacts/performance-esutils-baseline/esutils/__init__.py",
             "seconds": 0.023248499957844615
           },
           {
-            "module": "C:\\Github\\old_repos\\implementation-artifacts\\performance-esutils-baseline\\esutils\\__init__.py",
+            "module": "<workspace>/implementation-artifacts/performance-esutils-baseline/esutils/__init__.py",
             "seconds": 0.024392800056375563
           }
         ]
@@ -138,39 +138,39 @@
         "medianSeconds": 0.014904299983754754,
         "samples": [
           {
-            "module": "C:\\Github\\old_repos\\esutils-python\\esutils\\__init__.py",
+            "module": "<workspace>/esutils-python/esutils/__init__.py",
             "seconds": 0.014524700003676116
           },
           {
-            "module": "C:\\Github\\old_repos\\esutils-python\\esutils\\__init__.py",
+            "module": "<workspace>/esutils-python/esutils/__init__.py",
             "seconds": 0.015295700053684413
           },
           {
-            "module": "C:\\Github\\old_repos\\esutils-python\\esutils\\__init__.py",
+            "module": "<workspace>/esutils-python/esutils/__init__.py",
             "seconds": 0.01532580005005002
           },
           {
-            "module": "C:\\Github\\old_repos\\esutils-python\\esutils\\__init__.py",
+            "module": "<workspace>/esutils-python/esutils/__init__.py",
             "seconds": 0.014904299983754754
           },
           {
-            "module": "C:\\Github\\old_repos\\esutils-python\\esutils\\__init__.py",
+            "module": "<workspace>/esutils-python/esutils/__init__.py",
             "seconds": 0.016433800105005503
           },
           {
-            "module": "C:\\Github\\old_repos\\esutils-python\\esutils\\__init__.py",
+            "module": "<workspace>/esutils-python/esutils/__init__.py",
             "seconds": 0.014808299951255322
           },
           {
-            "module": "C:\\Github\\old_repos\\esutils-python\\esutils\\__init__.py",
+            "module": "<workspace>/esutils-python/esutils/__init__.py",
             "seconds": 0.014218700001947582
           },
           {
-            "module": "C:\\Github\\old_repos\\esutils-python\\esutils\\__init__.py",
+            "module": "<workspace>/esutils-python/esutils/__init__.py",
             "seconds": 0.014680400025099516
           },
           {
-            "module": "C:\\Github\\old_repos\\esutils-python\\esutils\\__init__.py",
+            "module": "<workspace>/esutils-python/esutils/__init__.py",
             "seconds": 0.015170600032433867
           }
         ]
@@ -184,47 +184,47 @@
         "medianRetainedBytes": 85594,
         "samples": [
           {
-            "module": "C:\\Github\\old_repos\\implementation-artifacts\\performance-acornwalk-baseline\\acornwalk\\__init__.py",
+            "module": "<workspace>/implementation-artifacts/performance-acornwalk-baseline/acornwalk/__init__.py",
             "peakBytes": 1838253,
             "retainedBytes": 85594
           },
           {
-            "module": "C:\\Github\\old_repos\\implementation-artifacts\\performance-acornwalk-baseline\\acornwalk\\__init__.py",
+            "module": "<workspace>/implementation-artifacts/performance-acornwalk-baseline/acornwalk/__init__.py",
             "peakBytes": 1838253,
             "retainedBytes": 85594
           },
           {
-            "module": "C:\\Github\\old_repos\\implementation-artifacts\\performance-acornwalk-baseline\\acornwalk\\__init__.py",
+            "module": "<workspace>/implementation-artifacts/performance-acornwalk-baseline/acornwalk/__init__.py",
             "peakBytes": 1838253,
             "retainedBytes": 85594
           },
           {
-            "module": "C:\\Github\\old_repos\\implementation-artifacts\\performance-acornwalk-baseline\\acornwalk\\__init__.py",
+            "module": "<workspace>/implementation-artifacts/performance-acornwalk-baseline/acornwalk/__init__.py",
             "peakBytes": 1838253,
             "retainedBytes": 85594
           },
           {
-            "module": "C:\\Github\\old_repos\\implementation-artifacts\\performance-acornwalk-baseline\\acornwalk\\__init__.py",
+            "module": "<workspace>/implementation-artifacts/performance-acornwalk-baseline/acornwalk/__init__.py",
             "peakBytes": 1838253,
             "retainedBytes": 85594
           },
           {
-            "module": "C:\\Github\\old_repos\\implementation-artifacts\\performance-acornwalk-baseline\\acornwalk\\__init__.py",
+            "module": "<workspace>/implementation-artifacts/performance-acornwalk-baseline/acornwalk/__init__.py",
             "peakBytes": 1838253,
             "retainedBytes": 85594
           },
           {
-            "module": "C:\\Github\\old_repos\\implementation-artifacts\\performance-acornwalk-baseline\\acornwalk\\__init__.py",
+            "module": "<workspace>/implementation-artifacts/performance-acornwalk-baseline/acornwalk/__init__.py",
             "peakBytes": 1838253,
             "retainedBytes": 85594
           },
           {
-            "module": "C:\\Github\\old_repos\\implementation-artifacts\\performance-acornwalk-baseline\\acornwalk\\__init__.py",
+            "module": "<workspace>/implementation-artifacts/performance-acornwalk-baseline/acornwalk/__init__.py",
             "peakBytes": 1838253,
             "retainedBytes": 85594
           },
           {
-            "module": "C:\\Github\\old_repos\\implementation-artifacts\\performance-acornwalk-baseline\\acornwalk\\__init__.py",
+            "module": "<workspace>/implementation-artifacts/performance-acornwalk-baseline/acornwalk/__init__.py",
             "peakBytes": 1838253,
             "retainedBytes": 85594
           }
@@ -235,47 +235,47 @@
         "medianRetainedBytes": 129699,
         "samples": [
           {
-            "module": "C:\\Github\\old_repos\\acornwalk-python\\acornwalk\\__init__.py",
+            "module": "<workspace>/acornwalk-python/acornwalk/__init__.py",
             "peakBytes": 2759184,
             "retainedBytes": 129699
           },
           {
-            "module": "C:\\Github\\old_repos\\acornwalk-python\\acornwalk\\__init__.py",
+            "module": "<workspace>/acornwalk-python/acornwalk/__init__.py",
             "peakBytes": 2759139,
             "retainedBytes": 129654
           },
           {
-            "module": "C:\\Github\\old_repos\\acornwalk-python\\acornwalk\\__init__.py",
+            "module": "<workspace>/acornwalk-python/acornwalk/__init__.py",
             "peakBytes": 2759184,
             "retainedBytes": 129699
           },
           {
-            "module": "C:\\Github\\old_repos\\acornwalk-python\\acornwalk\\__init__.py",
+            "module": "<workspace>/acornwalk-python/acornwalk/__init__.py",
             "peakBytes": 2759184,
             "retainedBytes": 129699
           },
           {
-            "module": "C:\\Github\\old_repos\\acornwalk-python\\acornwalk\\__init__.py",
+            "module": "<workspace>/acornwalk-python/acornwalk/__init__.py",
             "peakBytes": 2759184,
             "retainedBytes": 129699
           },
           {
-            "module": "C:\\Github\\old_repos\\acornwalk-python\\acornwalk\\__init__.py",
+            "module": "<workspace>/acornwalk-python/acornwalk/__init__.py",
             "peakBytes": 2759184,
             "retainedBytes": 129699
           },
           {
-            "module": "C:\\Github\\old_repos\\acornwalk-python\\acornwalk\\__init__.py",
+            "module": "<workspace>/acornwalk-python/acornwalk/__init__.py",
             "peakBytes": 2759184,
             "retainedBytes": 129699
           },
           {
-            "module": "C:\\Github\\old_repos\\acornwalk-python\\acornwalk\\__init__.py",
+            "module": "<workspace>/acornwalk-python/acornwalk/__init__.py",
             "peakBytes": 2759184,
             "retainedBytes": 129699
           },
           {
-            "module": "C:\\Github\\old_repos\\acornwalk-python\\acornwalk\\__init__.py",
+            "module": "<workspace>/acornwalk-python/acornwalk/__init__.py",
             "peakBytes": 2759184,
             "retainedBytes": 129699
           }
@@ -288,47 +288,47 @@
         "medianRetainedBytes": 106778,
         "samples": [
           {
-            "module": "C:\\Github\\old_repos\\implementation-artifacts\\performance-esutils-baseline\\esutils\\__init__.py",
+            "module": "<workspace>/implementation-artifacts/performance-esutils-baseline/esutils/__init__.py",
             "peakBytes": 356104,
             "retainedBytes": 106778
           },
           {
-            "module": "C:\\Github\\old_repos\\implementation-artifacts\\performance-esutils-baseline\\esutils\\__init__.py",
+            "module": "<workspace>/implementation-artifacts/performance-esutils-baseline/esutils/__init__.py",
             "peakBytes": 356104,
             "retainedBytes": 106778
           },
           {
-            "module": "C:\\Github\\old_repos\\implementation-artifacts\\performance-esutils-baseline\\esutils\\__init__.py",
+            "module": "<workspace>/implementation-artifacts/performance-esutils-baseline/esutils/__init__.py",
             "peakBytes": 356104,
             "retainedBytes": 106778
           },
           {
-            "module": "C:\\Github\\old_repos\\implementation-artifacts\\performance-esutils-baseline\\esutils\\__init__.py",
+            "module": "<workspace>/implementation-artifacts/performance-esutils-baseline/esutils/__init__.py",
             "peakBytes": 356104,
             "retainedBytes": 106733
           },
           {
-            "module": "C:\\Github\\old_repos\\implementation-artifacts\\performance-esutils-baseline\\esutils\\__init__.py",
+            "module": "<workspace>/implementation-artifacts/performance-esutils-baseline/esutils/__init__.py",
             "peakBytes": 356104,
             "retainedBytes": 106778
           },
           {
-            "module": "C:\\Github\\old_repos\\implementation-artifacts\\performance-esutils-baseline\\esutils\\__init__.py",
+            "module": "<workspace>/implementation-artifacts/performance-esutils-baseline/esutils/__init__.py",
             "peakBytes": 356104,
             "retainedBytes": 106733
           },
           {
-            "module": "C:\\Github\\old_repos\\implementation-artifacts\\performance-esutils-baseline\\esutils\\__init__.py",
+            "module": "<workspace>/implementation-artifacts/performance-esutils-baseline/esutils/__init__.py",
             "peakBytes": 356104,
             "retainedBytes": 106733
           },
           {
-            "module": "C:\\Github\\old_repos\\implementation-artifacts\\performance-esutils-baseline\\esutils\\__init__.py",
+            "module": "<workspace>/implementation-artifacts/performance-esutils-baseline/esutils/__init__.py",
             "peakBytes": 356104,
             "retainedBytes": 106778
           },
           {
-            "module": "C:\\Github\\old_repos\\implementation-artifacts\\performance-esutils-baseline\\esutils\\__init__.py",
+            "module": "<workspace>/implementation-artifacts/performance-esutils-baseline/esutils/__init__.py",
             "peakBytes": 356104,
             "retainedBytes": 106733
           }
@@ -339,47 +339,47 @@
         "medianRetainedBytes": 151206,
         "samples": [
           {
-            "module": "C:\\Github\\old_repos\\esutils-python\\esutils\\__init__.py",
+            "module": "<workspace>/esutils-python/esutils/__init__.py",
             "peakBytes": 6491609,
             "retainedBytes": 151161
           },
           {
-            "module": "C:\\Github\\old_repos\\esutils-python\\esutils\\__init__.py",
+            "module": "<workspace>/esutils-python/esutils/__init__.py",
             "peakBytes": 6491609,
             "retainedBytes": 151161
           },
           {
-            "module": "C:\\Github\\old_repos\\esutils-python\\esutils\\__init__.py",
+            "module": "<workspace>/esutils-python/esutils/__init__.py",
             "peakBytes": 6491609,
             "retainedBytes": 151206
           },
           {
-            "module": "C:\\Github\\old_repos\\esutils-python\\esutils\\__init__.py",
+            "module": "<workspace>/esutils-python/esutils/__init__.py",
             "peakBytes": 6491609,
             "retainedBytes": 151206
           },
           {
-            "module": "C:\\Github\\old_repos\\esutils-python\\esutils\\__init__.py",
+            "module": "<workspace>/esutils-python/esutils/__init__.py",
             "peakBytes": 6491609,
             "retainedBytes": 151206
           },
           {
-            "module": "C:\\Github\\old_repos\\esutils-python\\esutils\\__init__.py",
+            "module": "<workspace>/esutils-python/esutils/__init__.py",
             "peakBytes": 6491609,
             "retainedBytes": 151161
           },
           {
-            "module": "C:\\Github\\old_repos\\esutils-python\\esutils\\__init__.py",
+            "module": "<workspace>/esutils-python/esutils/__init__.py",
             "peakBytes": 6491609,
             "retainedBytes": 151206
           },
           {
-            "module": "C:\\Github\\old_repos\\esutils-python\\esutils\\__init__.py",
+            "module": "<workspace>/esutils-python/esutils/__init__.py",
             "peakBytes": 6491609,
             "retainedBytes": 151206
           },
           {
-            "module": "C:\\Github\\old_repos\\esutils-python\\esutils\\__init__.py",
+            "module": "<workspace>/esutils-python/esutils/__init__.py",
             "peakBytes": 6491609,
             "retainedBytes": 151206
           }
@@ -406,7 +406,7 @@
       ],
       "peakTraversalBytes": 712,
       "representation": "native",
-      "module": "C:\\Github\\old_repos\\implementation-artifacts\\performance-acornwalk-baseline\\acornwalk\\__init__.py"
+      "module": "<workspace>/implementation-artifacts/performance-acornwalk-baseline/acornwalk/__init__.py"
     },
     "current": {
       "nodeCallbacks": 91,
@@ -424,7 +424,7 @@
       ],
       "peakTraversalBytes": 776,
       "representation": "native",
-      "module": "C:\\Github\\old_repos\\acornwalk-python\\acornwalk\\__init__.py"
+      "module": "<workspace>/acornwalk-python/acornwalk/__init__.py"
     },
     "currentMapping": {
       "nodeCallbacks": 91,
@@ -442,13 +442,13 @@
       ],
       "peakTraversalBytes": 776,
       "representation": "mapping",
-      "module": "C:\\Github\\old_repos\\acornwalk-python\\acornwalk\\__init__.py"
+      "module": "<workspace>/acornwalk-python/acornwalk/__init__.py"
     },
     "currentToBaselineRatio": 1.806874698046821
   },
   "utilities": {
     "baseline": {
-      "module": "C:\\Github\\old_repos\\implementation-artifacts\\performance-esutils-baseline\\esutils\\code.py",
+      "module": "<workspace>/implementation-artifacts/performance-esutils-baseline/esutils/code.py",
       "rows": [
         {
           "policy": "legacyES6",
@@ -588,7 +588,7 @@
       ]
     },
     "current": {
-      "module": "C:\\Github\\old_repos\\esutils-python\\esutils\\code.py",
+      "module": "<workspace>/esutils-python/esutils/code.py",
       "rows": [
         {
           "policy": "legacyES6",

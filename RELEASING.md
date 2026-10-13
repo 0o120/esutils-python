@@ -1,6 +1,6 @@
 # Publishing esutils
 
-The next stable release is **2.0.0**, requiring **Python 3.11+**.
+The **2.x** release series requires **Python 3.11+**.
 The PyPI distribution is `esutils`; the import remains `esutils`.
 
 ## Automatic publishing
@@ -34,19 +34,19 @@ the error. Already-uploaded files must match the newly built SHA256 exactly;
 only missing files are uploaded. A conflicting file requires a new version.
 PyPI lookup errors block publishing rather than pretending a version is absent.
 
-## First coordinated release
+## Coordinated releases
 
-Merge the four modernization branches before relying on `master` integration
+Merge compatible toolchain changes before relying on `master` integration
 checks; they test the current sibling libraries together. If a check started
 before the other projects were merged, rerun its original push CI run after
 the sibling changes are available. A successful rerun triggers publication.
 
-Publish `esutils 2.0.0` before `escodegen 2.0.0`, which requires `esutils>=2,<3`.
+Publish `esutils 2.x` before `escodegen 2.x`, which requires `esutils>=2,<3`.
 Parser and walker do not need a sibling runtime release. If the generator's
 dependency is not yet on PyPI, its upload staging fails with a clear message;
 rerun that publishing workflow after the utility release becomes available.
 
-The new metadata and README appear on PyPI after the first successful upload.
+Updated metadata and README appear on PyPI after a successful upload.
 Existing PyPI releases remain available for users of the earlier Python floor.
 
 ## Local package checks
@@ -61,8 +61,7 @@ python tools/pypi_release.py plan --project esutils
 ```
 
 The preflight/staging helper only reads PyPI metadata and prepares local files;
-it cannot upload anything. CI never executes the supplied external YouTube
-bundle and does not include it in the packages.
+it cannot upload anything.
 
 See [PyPA's publishing action](https://github.com/pypa/gh-action-pypi-publish)
 and [GitHub workflow_run](https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#workflow_run)

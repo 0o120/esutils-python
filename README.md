@@ -66,7 +66,7 @@ Python interpreter's Unicode database. Unicode updates require deliberate releas
 
 See [contributor instructions](https://github.com/0o120/esutils-python/blob/master/CONTRIBUTING.md),
 [migration notes](https://github.com/0o120/esutils-python/blob/master/CHANGELOG.md)
-and [implementation evidence](https://github.com/0o120/esutils-python/blob/master/IMPLEMENTATION_STATUS.md).
+and [CI results](https://github.com/0o120/esutils-python/actions).
 Maintainers can follow the
 [release instructions](https://github.com/0o120/esutils-python/blob/master/RELEASING.md).
 

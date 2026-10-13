@@ -40,3 +40,8 @@ The earlier import/allocation investigation remains in
 [performance.json](performance.json). Its uninstrumented source-only imports
 were about 14.9 ms versus 24.4 ms old; those measurements predate this round.
 Local timings vary across machines and do not promise a universal speed ratio.
+
+Archived measurements use `<workspace>/` for the original checkout root;
+machine-specific absolute paths have been removed. Timing samples, source
+hashes and classifications retain their recorded values; error diagnostics
+use the same portable path marker.
