@@ -1,6 +1,6 @@
 # Changelog
 
-## 2.0.0 — pending publication
+## 2.0.0 — 2026-10-13
 
 - Prepare stable PyPI metadata, documentation links, retained author/maintainer
   credits and version-independent distribution/runtime checks.
