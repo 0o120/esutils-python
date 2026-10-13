@@ -1,6 +1,6 @@
 # Implementation status
 
-2.0.0 is prepared locally and unreleased. Audit items U01–U06 are addressed;
+2.0.0 is prepared for publication. Audit items U01–U06 are addressed;
 the focused utility scope remains explicit rather than expanding unsupported APIs.
 
 Evidence on Python 3.11 and 3.12:

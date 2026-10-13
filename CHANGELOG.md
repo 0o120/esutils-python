@@ -1,6 +1,9 @@
 # Changelog
 
-## 2.0.0 — unreleased
+## 2.0.0 — pending publication
+
+- Prepare stable PyPI metadata, documentation links, retained author/maintainer
+  credits and version-independent distribution/runtime checks.
 
 - Use typed ASCII set membership before Unicode lookup; integer subclasses retain
   the checked scalar path and do not need to be hashable.

@@ -9,6 +9,19 @@ provided; upstream `ast` and `keyword` APIs are not ported.
 python -m pip install esutils
 ```
 
+## Upgrading from 1.x
+
+Version 2.0 requires Python 3.11 or newer. Choose the unqualified identifier
+predicates for Unicode 17; the ES5/ES6 names retain explicit Unicode 9 policies.
+Predicates reject invalid integer scalars with `False` and reject non-integer
+inputs, including bool, with `TypeError`. `fromCodePoint` returns one Python
+scalar character and raises `ValueError` for invalid scalar integers. See the
+[migration notes](https://github.com/0o120/esutils-python/blob/master/CHANGELOG.md).
+The distribution and import name remain `esutils`; `esutils.__version__` is the
+distribution version string.
+
+## Usage
+
 ```python
 from esutils import code
 assert code.UNICODE_VERSION == "17.0.0"
@@ -48,12 +61,15 @@ are not used.
 
 Generated scalar intervals use binary search with an ASCII fast path. Checked-in
 source files, exact SHA-256 checksums and the offline generator are documented
-in [data provenance](data/unicode/README.md). Results are independent of the
+in [data provenance](https://github.com/0o120/esutils-python/blob/master/data/unicode/README.md). Results are independent of the
 Python interpreter's Unicode database. Unicode updates require deliberate releases.
 
-See [contributor instructions](CONTRIBUTING.md), [migration notes](CHANGELOG.md)
-and [implementation evidence](IMPLEMENTATION_STATUS.md).
+See [contributor instructions](https://github.com/0o120/esutils-python/blob/master/CONTRIBUTING.md),
+[migration notes](https://github.com/0o120/esutils-python/blob/master/CHANGELOG.md)
+and [implementation evidence](https://github.com/0o120/esutils-python/blob/master/IMPLEMENTATION_STATUS.md).
+Maintainers can follow the
+[release instructions](https://github.com/0o120/esutils-python/blob/master/RELEASING.md).
 
-[Performance measurements](PERFORMANCE.md) document the public validation cost
+[Performance measurements](https://github.com/0o120/esutils-python/blob/master/PERFORMANCE.md) document the public validation cost
 and the private ord paths used by the coordinated toolchain. Public API
 validation and Unicode policies remain unchanged.

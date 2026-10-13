@@ -6,6 +6,7 @@ build-backend = "hatchling.build"
 name = "esutils"
 dynamic = ["version"]
 authors = [{name = "0x78", email = "contact@0x78.com"}]
+maintainers = [{name = "0x78", email = "contact@0x78.com"}]
 requires-python = ">=3.11"
 description = "Pinned Unicode character utilities for ECMAScript language tools"
 readme = "README.md"
@@ -13,9 +14,13 @@ license = "BSD-2-Clause AND Unicode-3.0"
 license-files = ["LICENSE", "data/unicode/LICENSE.txt"]
 keywords = ["esutils", "ecmascript", "javascript", "unicode", "estools"]
 classifiers = [
-    "Development Status :: 4 - Beta",
+    "Development Status :: 5 - Production/Stable",
     "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
     "Topic :: Software Development :: Compilers",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Text Processing :: General",
+    "Programming Language :: Python",
     "Programming Language :: Python :: 3 :: Only",
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
@@ -26,7 +31,12 @@ classifiers = [
 
 [project.urls]
 Homepage = "https://github.com/0o120/esutils-python"
+Source = "https://github.com/0o120/esutils-python"
 Issues = "https://github.com/0o120/esutils-python/issues"
+Documentation = "https://github.com/0o120/esutils-python/blob/master/README.md"
+Changelog = "https://github.com/0o120/esutils-python/blob/master/CHANGELOG.md"
+PyPI = "https://pypi.org/project/esutils/"
+Upstream = "https://github.com/estools/esutils"
 
 [tool.hatch.version]
 path = "esutils/_version.py"
@@ -37,5 +47,5 @@ packages = ["esutils"]
 [tool.hatch.build.targets.sdist]
 include = ["/esutils", "/data", "/tests", "/tools", "/.github", "/LICENSE", "/README.md",
     "/pyproject.toml", "/requirements-dev.in", "/requirements-dev.lock",
-    "/CHANGELOG.md", "/CONTRIBUTING.md", "/IMPLEMENTATION_STATUS.md",
+    "/CHANGELOG.md", "/CONTRIBUTING.md", "/RELEASING.md", "/IMPLEMENTATION_STATUS.md",
     "/PERFORMANCE.md", "/performance.json", "/performance-round2.json"]
