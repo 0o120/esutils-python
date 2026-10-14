@@ -62,6 +62,10 @@ def isOctalDigit(ch: int) -> bool:
 _WHITE_SPACE = frozenset((0x9, 0xB, 0xC, 0x20, 0xA0, 0x1680,
     *range(0x2000, 0x200B), 0x202F, 0x205F, 0x3000, 0xFEFF))
 _LINE_TERMINATORS = frozenset((0xA, 0xD, 0x2028, 0x2029))
+# Integer subclasses need not be hashable. Keep their public fallback based
+# on numeric equality, as with the other scalar predicates.
+_WHITE_SPACE_VALUES = tuple(sorted(_WHITE_SPACE))
+_LINE_TERMINATOR_VALUES = tuple(sorted(_LINE_TERMINATORS))
 
 
 def _white_space_from_ord(ch: int) -> bool:
@@ -82,13 +86,13 @@ def _decimal_digit_from_ord(ch: int) -> bool:
 def isWhiteSpace(ch: int) -> bool:
     if type(ch) is int:
         return 0 <= ch <= 0xFEFF and ch in _WHITE_SPACE
-    return _valid(ch) and ch in _WHITE_SPACE
+    return _valid(ch) and ch in _WHITE_SPACE_VALUES
 
 
 def isLineTerminator(ch: int) -> bool:
     if type(ch) is int:
         return 0 <= ch <= 0x2029 and ch in _LINE_TERMINATORS
-    return _valid(ch) and ch in _LINE_TERMINATORS
+    return _valid(ch) and ch in _LINE_TERMINATOR_VALUES
 
 
 def fromCodePoint(cp: int) -> str:

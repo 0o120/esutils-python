@@ -2,6 +2,9 @@
 
 ## Unreleased
 
+- Accept unhashable integer subclasses in whitespace and line-terminator
+  predicates, matching the other scalar predicates without invoking hash hooks.
+
 - Accelerate exact-integer digit and spacing predicates while preserving
   invalid-input errors, integer-subclass behavior and Unicode policies.
 

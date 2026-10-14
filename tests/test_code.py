@@ -53,6 +53,32 @@ class CodeTests(unittest.TestCase):
             if code._identifier_part_from_ord(value) != code.isIdentifierPart(cp):
                 self.fail(f"Private part policy differs at U+{cp:04X}")
 
+    def test_scalar_predicates_accept_unhashable_integer_subclasses(self):
+        class CodePoint(int):
+            __hash__ = None
+
+        predicates = (code.isWhiteSpace, code.isLineTerminator,
+                      code.isDecimalDigit, code.isHexDigit, code.isOctalDigit,
+                      code.isIdentifierStart, code.isIdentifierPart,
+                      code.isIdentifierStartES5, code.isIdentifierPartES5,
+                      code.isIdentifierStartES6, code.isIdentifierPartES6)
+        for predicate in predicates:
+            for point in (-1, 0, 9, 10, 11, 12, 13, 32, 48, 65, 95, 0x85,
+                          0xA0, 0x1680, 0x180E, 0x2000, 0x200A, 0x2028,
+                          0x2029, 0x202F, 0x205F, 0x3000, 0xD800, 0xFEFF,
+                          0x10400, 0x10FFFF, 0x110000):
+                with self.subTest(predicate=predicate.__name__, point=point):
+                    self.assertIs(predicate(CodePoint(point)), predicate(point))
+
+    def test_whitespace_and_line_predicates_do_not_invoke_hash_hooks(self):
+        class CodePoint(int):
+            def __hash__(self):
+                raise AssertionError('Code-point predicates must not hash inputs')
+
+        for predicate in (code.isWhiteSpace, code.isLineTerminator):
+            for point in range(0x100):
+                self.assertIs(predicate(CodePoint(point)), predicate(point))
+
     def test_private_ord_boundary_paths_match_public_policy_exhaustively(self):
         pairs = ((code._white_space_from_ord, code.isWhiteSpace),
             (code._line_terminator_from_ord, code.isLineTerminator),

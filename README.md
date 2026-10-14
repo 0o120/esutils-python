@@ -46,6 +46,7 @@ assert not code.isWhiteSpace(0x180E)
 | `fromCodePoint(cp)` | One Python scalar character; invalid scalars raise `ValueError` |
 
 Inputs are integer Unicode scalar code points, such as `ord(character)`.
+Integer subclasses are accepted and do not need to be hashable.
 Predicates return `False` for negative integers, values above U+10FFFF and
 surrogates. Non-integers (including bool) raise `TypeError` consistently.
 `fromCodePoint` returns one Python character for astral inputs; it is not a
