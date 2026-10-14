@@ -1,5 +1,10 @@
 # Changelog
 
+## Unreleased
+
+- Accelerate exact-integer digit and spacing predicates while preserving
+  invalid-input errors, integer-subclass behavior and Unicode policies.
+
 ## 2.0.0 — 2026-10-13
 
 - Prepare stable PyPI metadata, documentation links, retained author/maintainer

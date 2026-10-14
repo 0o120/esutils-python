@@ -1,5 +1,39 @@
 # Performance evidence
 
+## Post-gap performance audit — October 2026
+
+Exact built-in integers use direct digit and whitespace/line-terminator
+checks, avoiding repeated scalar validation. Other inputs retain the existing
+validation path, including integer subclasses and enums. Booleans still raise
+`TypeError`; invalid/out-of-range values and surrogates remain false. Bounded
+comparisons avoid hashing enormous invalid integers. Identifier tables and
+Unicode policies are unchanged.
+
+| Mixed public predicate batch | Before, milliseconds | After, milliseconds | Less time |
+| --- | ---: | ---: | ---: |
+| ASCII | 25.789 | 15.541 | 39.7% |
+| Unicode | 39.506 | 27.088 | 31.4% |
+
+These batches mix identifier, digit and spacing predicates; unchanged identifier
+predicates are included. All 40 test methods and 216 subtests pass on CPython
+3.11-3.15, including exhaustive Unicode checks and scalar/type boundary tests.
+
+Measurements use CPython 3.12.0 on Windows, default garbage collection and
+sequential alternating before/after processes. Large-file figures are medians
+of three fresh processes per version. Component figures use three fresh
+processes per version, seven warmed calls per process and the median of process
+medians. All raw samples, including outliers and small regressions, are retained.
+Imports, input reading and correctness comparisons are outside timing windows.
+
+Reproduction scripts, exact Python source hashes, profiles, logs, environments,
+and distributions are outside the repositories in
+`C:/Users/Ryzen/Benchmarks/toolchain-performance-2026-10-13/`.
+The report covers first-call/allocation costs, compatibility fallbacks and
+Python 3.11/3.15 boundary timings as well as the main comparisons. These are
+workload-specific results, not a universal speed guarantee.
+
+## Earlier performance work
+
 This round compares original master (`ce16f4e`), modern starting implementation
 (`6e32e20`), and current runtime (`1e85352`). [performance-round2.json](performance-round2.json)
 contains exact source hashes, seven timing samples per case, classifications,

@@ -42,14 +42,20 @@ def _valid(ch: int) -> bool:
 
 
 def isDecimalDigit(ch: int) -> bool:
+    if type(ch) is int:
+        return 0x30 <= ch <= 0x39
     return _valid(ch) and 0x30 <= ch <= 0x39
 
 
 def isHexDigit(ch: int) -> bool:
+    if type(ch) is int:
+        return 0x30 <= ch <= 0x39 or 0x61 <= ch <= 0x66 or 0x41 <= ch <= 0x46
     return _valid(ch) and (0x30 <= ch <= 0x39 or 0x61 <= ch <= 0x66 or 0x41 <= ch <= 0x46)
 
 
 def isOctalDigit(ch: int) -> bool:
+    if type(ch) is int:
+        return 0x30 <= ch <= 0x37
     return _valid(ch) and 0x30 <= ch <= 0x37
 
 
@@ -74,10 +80,14 @@ def _decimal_digit_from_ord(ch: int) -> bool:
 
 
 def isWhiteSpace(ch: int) -> bool:
+    if type(ch) is int:
+        return 0 <= ch <= 0xFEFF and ch in _WHITE_SPACE
     return _valid(ch) and ch in _WHITE_SPACE
 
 
 def isLineTerminator(ch: int) -> bool:
+    if type(ch) is int:
+        return 0 <= ch <= 0x2029 and ch in _LINE_TERMINATORS
     return _valid(ch) and ch in _LINE_TERMINATORS
 
 

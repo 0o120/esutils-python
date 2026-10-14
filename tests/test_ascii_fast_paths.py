@@ -22,6 +22,20 @@ class NamedPoint(IntEnum):
 
 
 class AsciiFastPathTests(unittest.TestCase):
+    def test_digit_and_spacing_fast_paths_preserve_scalar_contract(self):
+        predicates = (code.isDecimalDigit, code.isHexDigit, code.isOctalDigit,
+                      code.isWhiteSpace, code.isLineTerminator)
+        points = tuple(range(256)) + (0x1680, 0x2000, 0x2028, 0x2029, 0xFEFF,
+                                    0xD800, 0xDFFF, -1, 0x110000, 10 ** 10000)
+        for predicate in predicates:
+            for point in points:
+                self.assertIs(predicate(point), predicate(CodePoint(point)))
+            for value in (True, False, None, 'A', 65.0, b'A', [], {}):
+                with self.subTest(predicate=predicate.__name__, value=value), self.assertRaises(TypeError):
+                    predicate(value)
+            for point in NamedPoint:
+                self.assertIs(predicate(point), predicate(int(point)))
+
     def test_ascii_grammar_results(self):
         starts = set(map(ord, 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ$_'))
         parts = starts | set(map(ord, '0123456789'))
